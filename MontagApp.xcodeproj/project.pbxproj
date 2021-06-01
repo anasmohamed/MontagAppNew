@@ -34,6 +34,7 @@
 		32B0F1312666E90B00DF8566 /* EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F1242666E90B00DF8566 /* EmailValidation.swift */; };
 		32B0F1322666E90B00DF8566 /* ShadowForUIVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F1252666E90B00DF8566 /* ShadowForUIVIew.swift */; };
 		32B0F1382666E95D00DF8566 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F1372666E95D00DF8566 /* User.swift */; };
+		32B0F14B2666EC4000DF8566 /* SignUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B0F14A2666EC4000DF8566 /* SignUpView.storyboard */; };
 		3697598BFFFB616D6020378A /* Pods_MontagApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C895FF61342A872D3DBC155 /* Pods_MontagApp.framework */; };
 		8C4B6DA7FD994E3656C710E3 /* Pods_MontagApp_MontagAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E80FD2C5321F70D9A38BC0E /* Pods_MontagApp_MontagAppUITests.framework */; };
 		D286D100E73F7927C19CCF2F /* Pods_MontagAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAA398EF3F93540F42C0EEF /* Pods_MontagAppTests.framework */; };
@@ -92,6 +93,7 @@
 		32B0F1242666E90B00DF8566 /* EmailValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidation.swift; sourceTree = "<group>"; };
 		32B0F1252666E90B00DF8566 /* ShadowForUIVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowForUIVIew.swift; sourceTree = "<group>"; };
 		32B0F1372666E95D00DF8566 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		32B0F14A2666EC4000DF8566 /* SignUpView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SignUpView.storyboard; path = ../../../../../../../Documents/SignUpView.storyboard; sourceTree = "<group>"; };
 		432749F83A7CDCB1493F9995 /* Pods-MontagApp-MontagAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MontagApp-MontagAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MontagApp-MontagAppUITests/Pods-MontagApp-MontagAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4C895FF61342A872D3DBC155 /* Pods_MontagApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MontagApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EE9F6F62EE173103DAA727 /* Pods-MontagApp-MontagAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MontagApp-MontagAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MontagApp-MontagAppUITests/Pods-MontagApp-MontagAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		32B0F0EF2666E47700DF8566 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				32B0F1432666EBA700DF8566 /* SignUp */,
 				32B0F0F02666E48000DF8566 /* Login */,
 			);
 			path = Auth;
@@ -272,6 +275,38 @@
 				32B0F1372666E95D00DF8566 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		32B0F1432666EBA700DF8566 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				32B0F1492666EBCB00DF8566 /* SignUpAPIManager */,
+				32B0F1482666EBC100DF8566 /* ViewModel */,
+				32B0F1472666EBB300DF8566 /* View */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		32B0F1472666EBB300DF8566 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32B0F14A2666EC4000DF8566 /* SignUpView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32B0F1482666EBC100DF8566 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		32B0F1492666EBCB00DF8566 /* SignUpAPIManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignUpAPIManager;
 			sourceTree = "<group>";
 		};
 		D4F99FAB427E436572A2F05C /* Pods */ = {
@@ -407,6 +442,7 @@
 			files = (
 				32B0F0F52666E4EF00DF8566 /* LoginView.storyboard in Resources */,
 				32B0F0C82666E1F900DF8566 /* LaunchScreen.storyboard in Resources */,
+				32B0F14B2666EC4000DF8566 /* SignUpView.storyboard in Resources */,
 				32B0F0C52666E1F900DF8566 /* Assets.xcassets in Resources */,
 				32B0F0C32666E1F700DF8566 /* Main.storyboard in Resources */,
 			);

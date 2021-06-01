@@ -64,7 +64,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7so-3X-Ge3">
                                 <rect key="frame" x="20" y="481" width="374" height="45"/>
-                                <color key="backgroundColor" red="0.1529411765" green="0.64705882349999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.12126223" green="0.71409296990000004" blue="0.96170288319999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="pEm-8a-MrH"/>
                                 </constraints>

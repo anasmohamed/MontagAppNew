@@ -13,7 +13,8 @@ class SignupViewModel {
             advertiserName = user.advertiserName
             password = user.password
             email = user.email
-            phoneNumber = user.phoneNumber
+            mobileNumber = user.mobileNumber
+            confirmPassword = user.confirmPassword
             
            
         }
@@ -21,7 +22,7 @@ class SignupViewModel {
     private var advertiserName = ""
     private var password = ""
     private var email = ""
-    private var phoneNumber = ""
+    private var mobileNumber = ""
     private var isTermsAndConditionChecked = false
     private var confirmPassword = ""
     
@@ -30,7 +31,7 @@ class SignupViewModel {
     var isAdvertiserNameTextFieldHighLighted: Observable<Bool> = Observable(false)
     var isPasswordTextFieldHighLighted: Observable<Bool> = Observable(false)
     var isEmailTextFieldHighLighted: Observable<Bool> = Observable(false)
-    var isPhoneNumberTextFieldHighLighted: Observable<Bool> = Observable(false)
+    var isMobileNumberTextFieldHighLighted: Observable<Bool> = Observable(false)
     var isPrivacyPolicyCheckboxChecked: Observable<Bool> = Observable(false)
     var errorMessage: Observable<String?> = Observable(nil)
     var signupSuccess: Observable<[String]?> = Observable(nil)
@@ -43,17 +44,17 @@ class SignupViewModel {
     //    }
     
     //Here we update our model
-    func updateCredentials(advertiserName: String, password: String, phoneNumber: String,email: String,isTermsAndConditionChecked : Bool) {
+    func updateCredentials(advertiserName: String, password: String, mobileNumber: String,email: String,isTermsAndConditionChecked : Bool) {
         user.advertiserName =  advertiserName
         user.password = password
         user.email = email
-        user.phoneNumber = "\(phoneNumber)"
+        user.mobileNumber = "\(mobileNumber)"
         self.isTermsAndConditionChecked = isTermsAndConditionChecked
     }
     
     
     func signup() {
-        signupManager.signupWithEmailAndPassword(email: email, password: password) { [weak self] (user,error) in
+        signupManager.signupWithEmailAndPassword(advertiserName:advertiserName,email: email, password: password,passwordConfirmation: confirmPassword, mobileNumber: mobileNumber) { [weak self] (user,error) in
             guard let error = error else {
                 self?.signupSuccess.value = user
                 
@@ -111,10 +112,10 @@ class SignupViewModel {
             isEmailTextFieldHighLighted.value = true
             return .Incorrect
         }
-        if phoneNumber.isEmpty{
+        if mobileNumber.isEmpty{
             
             errorMessage.value = "phone number field is empty."
-            isPhoneNumberTextFieldHighLighted.value = true
+            isMobileNumberTextFieldHighLighted.value = true
             return .Incorrect
         }
       

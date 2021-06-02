@@ -61,7 +61,7 @@ class SignUpTableViewController: UITableViewController {
         signupViewModel.isAdvertiserNameTextFieldHighLighted.bind { [weak self] in
             if $0 { self?.highlightTextField((self?.advertiserNameTextFeild)!)}
         }
-        signupViewModel.isPhoneNumberTextFieldHighLighted.bind { [weak self] in
+        signupViewModel.isMobileNumberTextFieldHighLighted.bind { [weak self] in
             if $0 { self?.highlightTextField((self?.mobileNumberTextField)!)}
         }
         signupViewModel.errorMessage.bind {
@@ -73,7 +73,6 @@ class SignUpTableViewController: UITableViewController {
             // this is just one of many style options
             style.messageColor = .white
             style.backgroundColor = .red
-            style.messageFont = UIFont(name:"Cairo-Regular" , size:20.0)!
             self.view.makeToast(errorMessage, duration: 3.0, position: .bottom,style:style)
 //            AlertController.showAllert(title: "Error", message: errorMessage, allertType: .error)
         }
@@ -118,7 +117,7 @@ class SignUpTableViewController: UITableViewController {
     }
 
     @IBAction func signUpBtnDidTapped(_ sender: Any) {
-        signupViewModel.updateCredentials(advertiserName: advertiserNameTextFeild.text!, password: passwordTextField.text!,phoneNumber: mobileNumberTextField.text!,email: emailTextField.text!,isTermsAndConditionChecked: termsAndConditionCheckBox.isChecked)
+        signupViewModel.updateCredentials(advertiserName: advertiserNameTextFeild.text!, password: passwordTextField.text!,mobileNumber: mobileNumberTextField.text!,email: emailTextField.text!,isTermsAndConditionChecked: termsAndConditionCheckBox.isChecked)
         
         //Here we check user's credentials input - if it's correct we call login()
         switch signupViewModel.credentialsInput() {

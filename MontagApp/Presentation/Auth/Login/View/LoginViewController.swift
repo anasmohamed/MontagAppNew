@@ -77,6 +77,10 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func createNewAccountBtnDidTapped(_ sender: Any) {
+        let signUpStoryboard = UIStoryboard.init(name: "SignUpView", bundle: nil)
+        let signUpViewController = signUpStoryboard.instantiateViewController(withIdentifier: "SignUpTableViewController")
+        self.navigationController?.pushViewController(signUpViewController, animated: true)
+        
     }
     @IBAction func forgetPasswordBtnDidTapped(_ sender: Any) {
       

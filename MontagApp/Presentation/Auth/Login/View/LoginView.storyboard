@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login-->
+        <!--تسجيل دخول-->
         <scene sceneID="xas-Jn-shC">
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" id="cKb-Yr-av7" customClass="LoginViewController" customModule="MontagApp" sceneMemberID="viewController">
@@ -118,7 +118,7 @@
                             <constraint firstItem="A1s-M1-z4W" firstAttribute="centerX" secondItem="a9r-Xo-zLl" secondAttribute="centerX" id="whE-RU-EJr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Login" id="Vjv-fz-A5x"/>
+                    <navigationItem key="navigationItem" title="تسجيل دخول" id="Vjv-fz-A5x"/>
                     <connections>
                         <outlet property="createNewAccountBtn" destination="jZ0-tl-zsG" id="8lq-st-Vkc"/>
                         <outlet property="emailTextField" destination="sM7-CH-y4K" id="IJ3-K9-VKM"/>

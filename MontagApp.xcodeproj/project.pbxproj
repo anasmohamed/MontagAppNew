@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		327F688B2667BFA700F2641A /* advertisementsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327F688A2667BFA700F2641A /* advertisementsView.storyboard */; };
 		327F68932667CB4000F2641A /* AdvertisementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327F68922667CB4000F2641A /* AdvertisementsViewController.swift */; };
+		327F68A12668208000F2641A /* CategoiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327F689F2668208000F2641A /* CategoiesCollectionViewCell.swift */; };
+		327F68A22668208000F2641A /* CategoiesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327F68A02668208000F2641A /* CategoiesCollectionViewCell.xib */; };
+		327F68AA2668236B00F2641A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327F68A92668236B00F2641A /* Category.swift */; };
+		327F68B12668336A00F2641A /* AdvertisementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327F68AF2668336A00F2641A /* AdvertisementsTableViewCell.swift */; };
+		327F68B22668336A00F2641A /* AdvertisementsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327F68B02668336A00F2641A /* AdvertisementsTableViewCell.xib */; };
 		32B0F0BC2666E1F700DF8566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F0BB2666E1F700DF8566 /* AppDelegate.swift */; };
 		32B0F0BE2666E1F700DF8566 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F0BD2666E1F700DF8566 /* SceneDelegate.swift */; };
 		32B0F0C02666E1F700DF8566 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F0BF2666E1F700DF8566 /* ViewController.swift */; };
@@ -69,6 +74,11 @@
 		2122B8BE1AE3E4CB9EB06A47 /* Pods-MontagApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MontagApp.debug.xcconfig"; path = "Target Support Files/Pods-MontagApp/Pods-MontagApp.debug.xcconfig"; sourceTree = "<group>"; };
 		327F688A2667BFA700F2641A /* advertisementsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = advertisementsView.storyboard; sourceTree = "<group>"; };
 		327F68922667CB4000F2641A /* AdvertisementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementsViewController.swift; sourceTree = "<group>"; };
+		327F689F2668208000F2641A /* CategoiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoiesCollectionViewCell.swift; sourceTree = "<group>"; };
+		327F68A02668208000F2641A /* CategoiesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoiesCollectionViewCell.xib; sourceTree = "<group>"; };
+		327F68A92668236B00F2641A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		327F68AF2668336A00F2641A /* AdvertisementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementsTableViewCell.swift; sourceTree = "<group>"; };
+		327F68B02668336A00F2641A /* AdvertisementsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertisementsTableViewCell.xib; sourceTree = "<group>"; };
 		32B0F0B82666E1F700DF8566 /* MontagApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MontagApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B0F0BB2666E1F700DF8566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32B0F0BD2666E1F700DF8566 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +168,7 @@
 		327F68872667BE4E00F2641A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				327F689D26681FF700F2641A /* Cells */,
 				327F688A2667BFA700F2641A /* advertisementsView.storyboard */,
 				327F68922667CB4000F2641A /* AdvertisementsViewController.swift */,
 			);
@@ -176,6 +187,33 @@
 			children = (
 			);
 			path = advertisementsAPIManager;
+			sourceTree = "<group>";
+		};
+		327F689D26681FF700F2641A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				327F68AE2668332A00F2641A /* AdverisemenTableViewCell */,
+				327F689E26681FF700F2641A /* CategriesCollectionViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		327F689E26681FF700F2641A /* CategriesCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				327F689F2668208000F2641A /* CategoiesCollectionViewCell.swift */,
+				327F68A02668208000F2641A /* CategoiesCollectionViewCell.xib */,
+			);
+			path = CategriesCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		327F68AE2668332A00F2641A /* AdverisemenTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				327F68AF2668336A00F2641A /* AdvertisementsTableViewCell.swift */,
+				327F68B02668336A00F2641A /* AdvertisementsTableViewCell.xib */,
+			);
+			path = AdverisemenTableViewCell;
 			sourceTree = "<group>";
 		};
 		32B0F0AF2666E1F700DF8566 = {
@@ -322,6 +360,7 @@
 			children = (
 				32B0F1372666E95D00DF8566 /* User.swift */,
 				32E4B9912667A5FE001C6F01 /* ResponseError.swift */,
+				327F68A92668236B00F2641A /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -502,7 +541,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				32B0F0F52666E4EF00DF8566 /* LoginView.storyboard in Resources */,
+				327F68B22668336A00F2641A /* AdvertisementsTableViewCell.xib in Resources */,
 				32B0F0C82666E1F900DF8566 /* LaunchScreen.storyboard in Resources */,
+				327F68A22668208000F2641A /* CategoiesCollectionViewCell.xib in Resources */,
 				32B0F14B2666EC4000DF8566 /* SignUpView.storyboard in Resources */,
 				32B0F0C52666E1F900DF8566 /* Assets.xcassets in Resources */,
 				32B0F0C32666E1F700DF8566 /* Main.storyboard in Resources */,
@@ -647,6 +688,7 @@
 				32B0F1272666E90B00DF8566 /* UIResponder + KeyboardExtension.swift in Sources */,
 				32B0F1582666FE1200DF8566 /* SignupViewModel.swift in Sources */,
 				32B0F0BC2666E1F700DF8566 /* AppDelegate.swift in Sources */,
+				327F68B12668336A00F2641A /* AdvertisementsTableViewCell.swift in Sources */,
 				32B0F12C2666E90B00DF8566 /* PlaceholderCenterText.swift in Sources */,
 				32B0F10A2666E57B00DF8566 /* LoginManager.swift in Sources */,
 				32B0F1052666E57300DF8566 /* LoginViewModel.swift in Sources */,
@@ -659,6 +701,8 @@
 				32B0F1302666E90B00DF8566 /* UITextField + DoneBtnExtension.swift in Sources */,
 				32B0F1312666E90B00DF8566 /* EmailValidation.swift in Sources */,
 				32B0F12E2666E90B00DF8566 /* UIView+Constraints.swift in Sources */,
+				327F68AA2668236B00F2641A /* Category.swift in Sources */,
+				327F68A12668208000F2641A /* CategoiesCollectionViewCell.swift in Sources */,
 				32B0F1382666E95D00DF8566 /* User.swift in Sources */,
 				32B0F15D2666FE2400DF8566 /* SignupManager.swift in Sources */,
 			);

@@ -121,14 +121,22 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ORV-V7-GLE">
+                                <rect key="frame" x="0.0" y="247" width="414" height="615"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lCM-W7-ws4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="lCM-W7-ws4" firstAttribute="bottom" secondItem="ORV-V7-GLE" secondAttribute="bottom" id="39e-yI-Dxd"/>
+                            <constraint firstItem="ORV-V7-GLE" firstAttribute="trailing" secondItem="lCM-W7-ws4" secondAttribute="trailing" id="R4p-k2-3Zp"/>
                             <constraint firstItem="pQt-E5-vhH" firstAttribute="leading" secondItem="lCM-W7-ws4" secondAttribute="leading" id="R75-sT-XLy"/>
                             <constraint firstItem="pQt-E5-vhH" firstAttribute="trailing" secondItem="lCM-W7-ws4" secondAttribute="trailing" id="VNb-aP-ypg"/>
                             <constraint firstItem="3mb-Fh-2WS" firstAttribute="trailing" secondItem="lCM-W7-ws4" secondAttribute="trailing" id="bGm-t5-nvy"/>
+                            <constraint firstItem="ORV-V7-GLE" firstAttribute="top" secondItem="3mb-Fh-2WS" secondAttribute="bottom" id="dYA-td-R2T"/>
                             <constraint firstItem="3mb-Fh-2WS" firstAttribute="top" secondItem="pQt-E5-vhH" secondAttribute="bottom" id="hva-Ag-TRY"/>
+                            <constraint firstItem="ORV-V7-GLE" firstAttribute="leading" secondItem="lCM-W7-ws4" secondAttribute="leading" id="pAL-Yc-9ef"/>
                             <constraint firstItem="3mb-Fh-2WS" firstAttribute="leading" secondItem="lCM-W7-ws4" secondAttribute="leading" id="r60-8P-YZc"/>
                             <constraint firstItem="pQt-E5-vhH" firstAttribute="top" secondItem="7Q0-9B-IlE" secondAttribute="top" constant="37" id="r9n-Jh-g3x"/>
                         </constraints>

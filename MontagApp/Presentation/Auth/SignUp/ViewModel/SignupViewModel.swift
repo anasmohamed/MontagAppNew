@@ -7,28 +7,27 @@
 
 import Foundation
 class SignupViewModel {
-    private let signupManager  = SignupManager()
+    private let signupManager  = SignUpAPIManager()
     private var user = User(){
         didSet{
-            userName = user.userName
+            advertiserName = user.advertiserName
             password = user.password
             email = user.email
             phoneNumber = user.phoneNumber
-            isActive = user.isActive
-            notificationToken = user.deviceToken
+            
+           
         }
     }
-    private var userName = ""
+    private var advertiserName = ""
     private var password = ""
     private var email = ""
     private var phoneNumber = ""
-    private var privacyPolicyCheckbox = false
-    private var isActive = ""
-    private var notificationToken = ""
+    private var isTermsAndConditionChecked = false
+    private var confirmPassword = ""
     
 
     var credentialsInputErrorMessage: Observable<String> = Observable("")
-    var isUsernameTextFieldHighLighted: Observable<Bool> = Observable(false)
+    var isAdvertiserNameTextFieldHighLighted: Observable<Bool> = Observable(false)
     var isPasswordTextFieldHighLighted: Observable<Bool> = Observable(false)
     var isEmailTextFieldHighLighted: Observable<Bool> = Observable(false)
     var isPhoneNumberTextFieldHighLighted: Observable<Bool> = Observable(false)
@@ -44,15 +43,12 @@ class SignupViewModel {
     //    }
     
     //Here we update our model
-    func updateCredentials(username: String, password: String, phoneNumber: String,email: String,isPrivacyPolicyChecked : Bool,isActive : String,deviceToken: String) {
-        user.userName = username
+    func updateCredentials(advertiserName: String, password: String, phoneNumber: String,email: String,isTermsAndConditionChecked : Bool) {
+        user.advertiserName =  advertiserName
         user.password = password
         user.email = email
-        user.isActive = isActive
-        user.deviceToken = deviceToken
-        user.hasOrder = 0
-        user.phoneNumber = "+973\(phoneNumber)"
-        privacyPolicyCheckbox = isPrivacyPolicyChecked
+        user.phoneNumber = "\(phoneNumber)"
+        self.isTermsAndConditionChecked = isTermsAndConditionChecked
     }
     
     
@@ -77,13 +73,11 @@ class SignupViewModel {
 //        return emailPred.evaluate(with: email)
 //    }
     func saveUser(userToken:String)  {
-        let user = User(userName:userName , phoneNumber:phoneNumber , email: email, password:password , isActive:isActive , hasOrder:0 , token:userToken , currentOrder:"" , deviceToken:notificationToken )
-        signupManager.sendUserData(user:user){_,_ in
-            
-        }
+//        let user = User(advertiserName: advertiserName , phoneNumber:phoneNumber , email: email, password:password )
+       
     }
     func credentialsInput() -> CredentialsInputStatus {
-        if !privacyPolicyCheckbox
+        if !isTermsAndConditionChecked
         {
             errorMessage.value = "the conditons must be agreed first".localized
             return .Incorrect
@@ -95,9 +89,9 @@ class SignupViewModel {
 //
 //            return .Incorrect
 //        }
-        if userName.isEmpty {
+        if advertiserName.isEmpty {
             errorMessage.value = "Username field is empty.".localized
-            isUsernameTextFieldHighLighted.value = true
+            isAdvertiserNameTextFieldHighLighted.value = true
             return .Incorrect
         }
         if password.isEmpty {

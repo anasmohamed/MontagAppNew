@@ -7,13 +7,11 @@
 
 import Foundation
 struct User {
-    var userName : String = ""
+    var advertiserName : String = ""
     var phoneNumber : String = ""
     var email : String = ""
     var password : String = ""
-    var isActive = ""
-    var hasOrder = 0
-    var token = ""
-    var currentOrder = ""
-    var deviceToken = ""
+//    var confirmPassword = ""
+//    var token = ""
+    
 }

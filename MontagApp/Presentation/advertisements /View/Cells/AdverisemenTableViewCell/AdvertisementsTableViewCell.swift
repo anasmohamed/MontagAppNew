@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SDWebImage
 class AdvertisementsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var addAdvertisementToFavoriteBtn: UIButton!
@@ -18,6 +18,18 @@ class AdvertisementsTableViewCell: UITableViewCell {
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var ratingCountLbl: UILabel!
     @IBOutlet weak var containerView: UIView!
+    
+    var item = Advertisement()
+    {
+        didSet{
+            fromTimeLbl.text = item.fromTime
+            cityNameLbl.text = item.cityName
+            advertiserNameLbl.text = item.advertiserName
+            advertisementTitleLbl.text = item.advertisementTile
+            advertisementImage.sd_setImage(with: URL(string: item.advertisementImage ?? ""))
+            ratingCountLbl.text = item.ratingCount
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -30,5 +42,5 @@ class AdvertisementsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+   
 }

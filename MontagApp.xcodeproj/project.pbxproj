@@ -14,6 +14,8 @@
 		327F68AA2668236B00F2641A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327F68A92668236B00F2641A /* Category.swift */; };
 		327F68B12668336A00F2641A /* AdvertisementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327F68AF2668336A00F2641A /* AdvertisementsTableViewCell.swift */; };
 		327F68B22668336A00F2641A /* AdvertisementsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327F68B02668336A00F2641A /* AdvertisementsTableViewCell.xib */; };
+		327F68BA2668380B00F2641A /* Advertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327F68B92668380B00F2641A /* Advertisement.swift */; };
+		327F68BF2668399C00F2641A /* AdvertisementsAPIMagager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327F68BE2668399C00F2641A /* AdvertisementsAPIMagager.swift */; };
 		32B0F0BC2666E1F700DF8566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F0BB2666E1F700DF8566 /* AppDelegate.swift */; };
 		32B0F0BE2666E1F700DF8566 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F0BD2666E1F700DF8566 /* SceneDelegate.swift */; };
 		32B0F0C02666E1F700DF8566 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F0BF2666E1F700DF8566 /* ViewController.swift */; };
@@ -79,6 +81,8 @@
 		327F68A92668236B00F2641A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		327F68AF2668336A00F2641A /* AdvertisementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementsTableViewCell.swift; sourceTree = "<group>"; };
 		327F68B02668336A00F2641A /* AdvertisementsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertisementsTableViewCell.xib; sourceTree = "<group>"; };
+		327F68B92668380B00F2641A /* Advertisement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advertisement.swift; sourceTree = "<group>"; };
+		327F68BE2668399C00F2641A /* AdvertisementsAPIMagager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementsAPIMagager.swift; sourceTree = "<group>"; };
 		32B0F0B82666E1F700DF8566 /* MontagApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MontagApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B0F0BB2666E1F700DF8566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32B0F0BD2666E1F700DF8566 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 		327F68892667BE6100F2641A /* advertisementsAPIManager */ = {
 			isa = PBXGroup;
 			children = (
+				327F68BE2668399C00F2641A /* AdvertisementsAPIMagager.swift */,
 			);
 			path = advertisementsAPIManager;
 			sourceTree = "<group>";
@@ -361,6 +366,7 @@
 				32B0F1372666E95D00DF8566 /* User.swift */,
 				32E4B9912667A5FE001C6F01 /* ResponseError.swift */,
 				327F68A92668236B00F2641A /* Category.swift */,
+				327F68B92668380B00F2641A /* Advertisement.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -679,6 +685,7 @@
 				32B0F1292666E90B00DF8566 /* Observable.swift in Sources */,
 				32B0F1262666E90B00DF8566 /* Checkbox.swift in Sources */,
 				32B0F12D2666E90B00DF8566 /* LogoAnimationView.swift in Sources */,
+				327F68BA2668380B00F2641A /* Advertisement.swift in Sources */,
 				32B0F0C02666E1F700DF8566 /* ViewController.swift in Sources */,
 				32B0F1282666E90B00DF8566 /* Localize.swift in Sources */,
 				32B0F1502666F42B00DF8566 /* SignUpTableViewController.swift in Sources */,
@@ -695,6 +702,7 @@
 				32B0F0BE2666E1F700DF8566 /* SceneDelegate.swift in Sources */,
 				327F68932667CB4000F2641A /* AdvertisementsViewController.swift in Sources */,
 				32B0F1002666E56B00DF8566 /* LoginViewController.swift in Sources */,
+				327F68BF2668399C00F2641A /* AdvertisementsAPIMagager.swift in Sources */,
 				32B0F1322666E90B00DF8566 /* ShadowForUIVIew.swift in Sources */,
 				32B0F12B2666E90B00DF8566 /* HandleKeboardShowExtenstion.swift in Sources */,
 				32B0F0FB2666E56200DF8566 /* LoginVIewController + TextFiledDelegate.swift in Sources */,

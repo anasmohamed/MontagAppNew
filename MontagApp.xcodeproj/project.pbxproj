@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		327F688B2667BFA700F2641A /* advertisementsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327F688A2667BFA700F2641A /* advertisementsView.storyboard */; };
+		327F68932667CB4000F2641A /* AdvertisementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327F68922667CB4000F2641A /* AdvertisementsViewController.swift */; };
 		32B0F0BC2666E1F700DF8566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F0BB2666E1F700DF8566 /* AppDelegate.swift */; };
 		32B0F0BE2666E1F700DF8566 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F0BD2666E1F700DF8566 /* SceneDelegate.swift */; };
 		32B0F0C02666E1F700DF8566 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F0BF2666E1F700DF8566 /* ViewController.swift */; };
@@ -65,6 +67,8 @@
 /* Begin PBXFileReference section */
 		0B9C72C27B4C1D1011FD1E05 /* Pods-MontagAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MontagAppTests.release.xcconfig"; path = "Target Support Files/Pods-MontagAppTests/Pods-MontagAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		2122B8BE1AE3E4CB9EB06A47 /* Pods-MontagApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MontagApp.debug.xcconfig"; path = "Target Support Files/Pods-MontagApp/Pods-MontagApp.debug.xcconfig"; sourceTree = "<group>"; };
+		327F688A2667BFA700F2641A /* advertisementsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = advertisementsView.storyboard; sourceTree = "<group>"; };
+		327F68922667CB4000F2641A /* AdvertisementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementsViewController.swift; sourceTree = "<group>"; };
 		32B0F0B82666E1F700DF8566 /* MontagApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MontagApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B0F0BB2666E1F700DF8566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32B0F0BD2666E1F700DF8566 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +145,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		327F68862667BE4400F2641A /* advertisements  */ = {
+			isa = PBXGroup;
+			children = (
+				327F68892667BE6100F2641A /* advertisementsAPIManager */,
+				327F68882667BE5600F2641A /* ViewModel */,
+				327F68872667BE4E00F2641A /* View */,
+			);
+			path = "advertisements ";
+			sourceTree = "<group>";
+		};
+		327F68872667BE4E00F2641A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				327F688A2667BFA700F2641A /* advertisementsView.storyboard */,
+				327F68922667CB4000F2641A /* AdvertisementsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		327F68882667BE5600F2641A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		327F68892667BE6100F2641A /* advertisementsAPIManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = advertisementsAPIManager;
+			sourceTree = "<group>";
+		};
 		32B0F0AF2666E1F700DF8566 = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +238,7 @@
 		32B0F0EE2666E43F00DF8566 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				327F68862667BE4400F2641A /* advertisements  */,
 				32B0F0EF2666E47700DF8566 /* Auth */,
 			);
 			path = Presentation;
@@ -468,6 +506,7 @@
 				32B0F14B2666EC4000DF8566 /* SignUpView.storyboard in Resources */,
 				32B0F0C52666E1F900DF8566 /* Assets.xcassets in Resources */,
 				32B0F0C32666E1F700DF8566 /* Main.storyboard in Resources */,
+				327F688B2667BFA700F2641A /* advertisementsView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +651,7 @@
 				32B0F10A2666E57B00DF8566 /* LoginManager.swift in Sources */,
 				32B0F1052666E57300DF8566 /* LoginViewModel.swift in Sources */,
 				32B0F0BE2666E1F700DF8566 /* SceneDelegate.swift in Sources */,
+				327F68932667CB4000F2641A /* AdvertisementsViewController.swift in Sources */,
 				32B0F1002666E56B00DF8566 /* LoginViewController.swift in Sources */,
 				32B0F1322666E90B00DF8566 /* ShadowForUIVIew.swift in Sources */,
 				32B0F12B2666E90B00DF8566 /* HandleKeboardShowExtenstion.swift in Sources */,

@@ -44,12 +44,9 @@ class SignUpTableViewController: UITableViewController {
             }else{
 
                 guard let errorMessage = $0 else { return }
-                var style = ToastStyle()
 
                 // this is just one of many style options
-                style.messageColor = .white
-                style.backgroundColor = .red
-                self!.view.makeToast(errorMessage, duration: 3.0, position: .bottom,style:style)
+                self!.view.makeToast(errorMessage, duration: 3.0, position: .bottom)
             }
 //            let homeViewStoryboard = UIStoryboard.init(name: "MainView", bundle: nil)
 //            let homeViewController = homeViewStoryboard.instantiateViewController(withIdentifier: "HomeTabBar")

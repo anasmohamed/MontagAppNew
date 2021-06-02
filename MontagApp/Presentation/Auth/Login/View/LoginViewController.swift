@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var signInBtn: UIButton!
     @IBOutlet weak var createAccountStackView: UIStackView!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var createNewAccountBtn: UIButton!
     
     var loginViewModel = LoginViewModel()
     
@@ -25,17 +26,16 @@ class LoginViewController: UIViewController {
         bindData()
         setDelegates()
         handeIsUserLogin()
-        self.tabBarController?.tabBar.isHidden = true
-        self.navigationItem.setHidesBackButton(true, animated: true)
-        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-        createAccountStackView.addGestureRecognizer(tap)
+//        self.tabBarController?.tabBar.isHidden = true
+//        self.navigationItem.setHidesBackButton(true, animated: true)
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+////        createAccountStackView.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
     }
    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        containerView.cornerRadiusAndShodow()
         self.addKeyboardObserver()
 
         
@@ -51,7 +51,8 @@ class LoginViewController: UIViewController {
         self.removeKeyboardObserver()
     }
     func setupButton()  {
-        signInBtn.layer.cornerRadius = 5
+        signInBtn.layer.cornerRadius = 20
+        createNewAccountBtn.layer.cornerRadius = 20
     }
     func handeIsUserLogin()
     {
@@ -75,6 +76,8 @@ class LoginViewController: UIViewController {
     
     
     
+    @IBAction func createNewAccountBtnDidTapped(_ sender: Any) {
+    }
     @IBAction func forgetPasswordBtnDidTapped(_ sender: Any) {
       
 //        let forgetPasswordStoryboard = UIStoryboard.init(name: "ForgetPassword",bundle: nil)
@@ -88,10 +91,16 @@ class LoginViewController: UIViewController {
     
     func bindData() {
         loginViewModel.loginSuccess.bind { [self] in
-            guard let email = $0?[1] else { return }
-            UserDefaults.standard.set(email, forKey: "email")
-            UserDefaults.standard.set($0![0], forKey: "token")
-            navigateToMainViewController()
+            if $0 == "success"{
+                navigateToMainViewController()
+
+            }else{
+
+                guard let errorMessage = $0 else { return }
+
+                // this is just one of many style options
+                self.view.makeToast(errorMessage, duration: 3.0, position: .bottom)
+            }
 
         }
         
@@ -105,13 +114,10 @@ class LoginViewController: UIViewController {
         
         loginViewModel.errorMessage.bind {
             guard let errorMessage = $0 else { return }
-            var style = ToastStyle()
 
             // this is just one of many style options
-            style.messageColor = .white
-            style.backgroundColor = .red
-            style.messageFont = UIFont(name:"Cairo-Regular" , size:20.0)!
-            self.view.makeToast(errorMessage, duration: 3.0, position: .bottom,style:style)
+            
+            self.view.makeToast(errorMessage, duration: 3.0, position: .bottom)
         }
     }
     

@@ -22,7 +22,7 @@ class LoginViewModel {
     var isEmailTextFieldHighLighted: Observable<Bool> = Observable(false)
     var isPasswordTextFieldHighLighted: Observable<Bool> = Observable(false)
     var errorMessage: Observable<String?> = Observable(nil)
-    var loginSuccess: Observable<[String]?> = Observable(nil)
+    var loginSuccess: Observable<String?> = Observable(nil)
 
     //
     //    init(loginManager: LoginManager) {
@@ -55,23 +55,25 @@ class LoginViewModel {
         //            credentialsInputErrorMessage.value = "Please provide username and password."
         //            return .Incorrect
         //        }
+        if email.isEmpty {
+            errorMessage.value = "يجب إدخال البريد الإلكترونى".localized
+            isEmailTextFieldHighLighted.value = true
+            return .Incorrect
+        }
+        
+        if !EmailValidation.isValidEmail(email)
+        {
+            errorMessage.value = "يجب إدخال البريد الإلكترونى صحيح".localized
+            isEmailTextFieldHighLighted.value = true
+            return .Incorrect
+        }
         if password.isEmpty {
-            errorMessage.value = "Password should be 6 digits or more".localized
+            errorMessage.value = "يجب إدخال كلمة المرور".localized
             isPasswordTextFieldHighLighted.value = true
             return .Incorrect
             
         }
-        if email.isEmpty {
-            errorMessage.value = "email field is empty.".localized
-            isEmailTextFieldHighLighted.value = true
-            return .Incorrect
-        }
-        if !EmailValidation.isValidEmail(email)
-        {
-            errorMessage.value = "Enter Valid Email.".localized
-            isEmailTextFieldHighLighted.value = true
-            return .Incorrect
-        }
+        
         
         return .Correct
     }

@@ -34,7 +34,7 @@ class SignupViewModel {
     var isMobileNumberTextFieldHighLighted: Observable<Bool> = Observable(false)
     var isPrivacyPolicyCheckboxChecked: Observable<Bool> = Observable(false)
     var errorMessage: Observable<String?> = Observable(nil)
-    var signupSuccess: Observable<[String]?> = Observable(nil)
+    var signupSuccess: Observable<String?> = Observable(nil)
 //    var saveUserSuccess : Observable<> = Observable(nil)
     //    init() {
     //
@@ -44,11 +44,12 @@ class SignupViewModel {
     //    }
     
     //Here we update our model
-    func updateCredentials(advertiserName: String, password: String, mobileNumber: String,email: String,isTermsAndConditionChecked : Bool) {
+    func updateCredentials(advertiserName: String, password: String, confirmPassword:String,mobileNumber: String,email: String,isTermsAndConditionChecked : Bool) {
         user.advertiserName =  advertiserName
         user.password = password
         user.email = email
         user.mobileNumber = "\(mobileNumber)"
+        user.confirmPassword = confirmPassword
         self.isTermsAndConditionChecked = isTermsAndConditionChecked
     }
     

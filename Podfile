@@ -8,6 +8,7 @@ target 'MontagApp' do
   # Pods for MontagApp
       pod 'Toast-Swift', '~> 5.0.1'
       pod 'Alamofire', '~> 5.2'
+      pod 'SwiftyJSON', '~> 4.0'
 
   target 'MontagAppTests' do
     inherit! :search_paths

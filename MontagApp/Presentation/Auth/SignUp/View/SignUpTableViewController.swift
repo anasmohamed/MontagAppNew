@@ -36,19 +36,30 @@ class SignUpTableViewController: UITableViewController {
     }
     func bindData() {
 
-        signupViewModel.signupSuccess.bind {
+        signupViewModel.signupSuccess.bind {[weak self] in
             LoadingIndicatorView.hide()
 
-            guard let email = $0?[1] else { return }
-            let homeViewStoryboard = UIStoryboard.init(name: "MainView", bundle: nil)
-            let homeViewController = homeViewStoryboard.instantiateViewController(withIdentifier: "HomeTabBar")
-            self.signupViewModel.saveUser(userToken: $0![0])
-            print("token\($0?[0])")
-            homeViewController.modalPresentationStyle = .fullScreen
-            self.present(homeViewController, animated: true, completion: nil)
-            UserDefaults.standard.set(email, forKey: "email")
-            UserDefaults.standard.set($0![0], forKey: "token")
-            
+            if $0 == "success"{
+                
+            }else{
+
+                guard let errorMessage = $0 else { return }
+                var style = ToastStyle()
+
+                // this is just one of many style options
+                style.messageColor = .white
+                style.backgroundColor = .red
+                self!.view.makeToast(errorMessage, duration: 3.0, position: .bottom,style:style)
+            }
+//            let homeViewStoryboard = UIStoryboard.init(name: "MainView", bundle: nil)
+//            let homeViewController = homeViewStoryboard.instantiateViewController(withIdentifier: "HomeTabBar")
+//            self.signupViewModel.saveUser(userToken: $0![0])
+//            print("token\($0?[0])")
+//            homeViewController.modalPresentationStyle = .fullScreen
+//            self.present(homeViewController, animated: true, completion: nil)
+//            UserDefaults.standard.set(email, forKey: "email")
+//            UserDefaults.standard.set($0![0], forKey: "token")
+//
 
         }
         signupViewModel.isEmailTextFieldHighLighted.bind { [weak self] in
@@ -117,7 +128,7 @@ class SignUpTableViewController: UITableViewController {
     }
 
     @IBAction func signUpBtnDidTapped(_ sender: Any) {
-        signupViewModel.updateCredentials(advertiserName: advertiserNameTextFeild.text!, password: passwordTextField.text!,mobileNumber: mobileNumberTextField.text!,email: emailTextField.text!,isTermsAndConditionChecked: termsAndConditionCheckBox.isChecked)
+        signupViewModel.updateCredentials(advertiserName: advertiserNameTextFeild.text!, password: passwordTextField.text!,confirmPassword: confirmPasswordTextField.text!,mobileNumber: mobileNumberTextField.text!,email: emailTextField.text!,isTermsAndConditionChecked: termsAndConditionCheckBox.isChecked)
         
         //Here we check user's credentials input - if it's correct we call login()
         switch signupViewModel.credentialsInput() {

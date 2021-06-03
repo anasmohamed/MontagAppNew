@@ -23,13 +23,14 @@
                             <constraint firstAttribute="width" constant="100" id="GN8-aB-vcH"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d01-IV-4J5">
-                        <rect key="frame" x="0.0" y="114" width="41.5" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d01-IV-4J5">
+                        <rect key="frame" x="0.0" y="114" width="100" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="Qpi-ko-Nbu" secondAttribute="trailing" id="ATk-Th-yCz"/>
                     <constraint firstItem="Qpi-ko-Nbu" firstAttribute="leading" secondItem="e39-lo-Lrh" secondAttribute="leading" id="ElF-6X-NvE"/>

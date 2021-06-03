@@ -10,11 +10,7 @@ import SwiftyJSON
 
 
 struct Category {
-    var categoryName : String?
-    var categoryImage : String?
-    init?(withJSON data: JSON) {
-        self.categoryName = data["area_en"].stringValue
-        self.categoryName = data["area_ar"].stringValue
-        
-    }
+    var categoryName : String = ""
+    var categoryImage : String = ""
+   
 }

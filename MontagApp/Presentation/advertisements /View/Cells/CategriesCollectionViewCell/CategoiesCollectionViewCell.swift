@@ -13,6 +13,7 @@ class CategoiesCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        categoryImageView.layer.borderWidth = categoryImageView.frame.width / 2
         // Initialization code
     }
 

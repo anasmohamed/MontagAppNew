@@ -23,15 +23,22 @@ class AdvertisementsTableViewCell: UITableViewCell {
     {
         didSet{
             fromTimeLbl.text = item.fromTime
+            print(item.fromTime)
             cityNameLbl.text = item.cityName
             advertiserNameLbl.text = item.advertiserName
             advertisementTitleLbl.text = item.advertisementTile
-            advertisementImage.sd_setImage(with: URL(string: item.advertisementImage ?? ""))
+            print(item.advertisementImage)
+            let imageLink = item.advertisementImage?.replacingOccurrences(of: "http", with: "https")
+            
+            advertisementImage.sd_setImage(with: URL(string: imageLink!))
             ratingCountLbl.text = item.ratingCount
         }
     }
     override func awakeFromNib() {
         super.awakeFromNib()
+        mainView.layer.cornerRadius = 10
+        mainView.layer.borderWidth = 1
+        mainView.layer.borderColor = UIColor.gray.cgColor
         // Initialization code
     }
 

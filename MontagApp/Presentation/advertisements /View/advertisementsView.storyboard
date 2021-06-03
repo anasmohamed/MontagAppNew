@@ -121,9 +121,13 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ORV-V7-GLE">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ORV-V7-GLE">
                                 <rect key="frame" x="0.0" y="247" width="414" height="615"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="y57-On-6zS" id="ckd-JR-iig"/>
+                                    <outlet property="delegate" destination="y57-On-6zS" id="nLt-Rh-Zjc"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lCM-W7-ws4"/>
@@ -145,6 +149,7 @@
                         <outlet property="addAdveretisementBtn" destination="fqc-Pq-Ckq" id="Yf4-iF-Dju"/>
                         <outlet property="addSignBtn" destination="gZF-Oh-oZN" id="6Pz-8h-GmJ"/>
                         <outlet property="addYourAdvertisementView" destination="N4F-oc-Tac" id="gHQ-7Z-2nf"/>
+                        <outlet property="advertisementsTableView" destination="ORV-V7-GLE" id="By0-qd-H3Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGm-Ns-bKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

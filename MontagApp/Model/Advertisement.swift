@@ -16,6 +16,7 @@ struct Advertisement {
     var ratingCount : String?
     init?(withJSON data: JSON) {
         self.advertisementTile = data["title"].stringValue
+        print(data["title"].stringValue)
         self.fromTime = data["from_time"].stringValue
         self.cityName = data["city_name"].stringValue
         self.advertiserName = data["advertiser_name"].stringValue

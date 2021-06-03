@@ -11,7 +11,7 @@ import SwiftyJSON
 class AdvertisementsAPIMagager {
     func getAdvertisements(completionHandler: @escaping ([Advertisement]?,Error?) -> Void) {
         let url = "https://muntj.com/api/v1/advs"
-        AF.request(url, method: .get,parameters: [:],encoding: JSONEncoding.default)
+        AF.request(url, method: .get)
             .validate()
             .responseJSON { response in
                 // 4

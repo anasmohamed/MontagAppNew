@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3278B250266A6747006329FE /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278B24F266A6747006329FE /* TableViewController.swift */; };
+		3278B255266A6F2C006329FE /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278B254266A6F2C006329FE /* UITableViewVibrantCell.swift */; };
+		3278B25D266A7922006329FE /* RoundCornderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278B25C266A7922006329FE /* RoundCornderButton.swift */; };
 		327F688B2667BFA700F2641A /* advertisementsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327F688A2667BFA700F2641A /* advertisementsView.storyboard */; };
 		327F68932667CB4000F2641A /* AdvertisementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327F68922667CB4000F2641A /* AdvertisementsViewController.swift */; };
 		327F68A12668208000F2641A /* CategoiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327F689F2668208000F2641A /* CategoiesCollectionViewCell.swift */; };
@@ -54,6 +57,7 @@
 		32E3D84C26692C5F00C83AB8 /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3D84B26692C5F00C83AB8 /* CategoryListViewModel.swift */; };
 		32E4B9922667A5FE001C6F01 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E4B9912667A5FE001C6F01 /* ResponseError.swift */; };
 		32F5972C26699D6C00099F2F /* HomeViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F5972B26699D6C00099F2F /* HomeViewViewModel.swift */; };
+		32F597342669BE3F00099F2F /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F597332669BE3F00099F2F /* SideMenu.swift */; };
 		3697598BFFFB616D6020378A /* Pods_MontagApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C895FF61342A872D3DBC155 /* Pods_MontagApp.framework */; };
 		8C4B6DA7FD994E3656C710E3 /* Pods_MontagApp_MontagAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E80FD2C5321F70D9A38BC0E /* Pods_MontagApp_MontagAppUITests.framework */; };
 		D286D100E73F7927C19CCF2F /* Pods_MontagAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAA398EF3F93540F42C0EEF /* Pods_MontagAppTests.framework */; };
@@ -79,6 +83,9 @@
 /* Begin PBXFileReference section */
 		0B9C72C27B4C1D1011FD1E05 /* Pods-MontagAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MontagAppTests.release.xcconfig"; path = "Target Support Files/Pods-MontagAppTests/Pods-MontagAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		2122B8BE1AE3E4CB9EB06A47 /* Pods-MontagApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MontagApp.debug.xcconfig"; path = "Target Support Files/Pods-MontagApp/Pods-MontagApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3278B24F266A6747006329FE /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = "MontagApp/Presentation/advertisements /TableViewController.swift"; sourceTree = SOURCE_ROOT; };
+		3278B254266A6F2C006329FE /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewVibrantCell.swift; sourceTree = "<group>"; };
+		3278B25C266A7922006329FE /* RoundCornderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornderButton.swift; sourceTree = "<group>"; };
 		327F688A2667BFA700F2641A /* advertisementsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = advertisementsView.storyboard; sourceTree = "<group>"; };
 		327F68922667CB4000F2641A /* AdvertisementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementsViewController.swift; sourceTree = "<group>"; };
 		327F689F2668208000F2641A /* CategoiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoiesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -132,6 +139,7 @@
 		32E3D84B26692C5F00C83AB8 /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
 		32E4B9912667A5FE001C6F01 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
 		32F5972B26699D6C00099F2F /* HomeViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewModel.swift; sourceTree = "<group>"; };
+		32F597332669BE3F00099F2F /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		432749F83A7CDCB1493F9995 /* Pods-MontagApp-MontagAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MontagApp-MontagAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MontagApp-MontagAppUITests/Pods-MontagApp-MontagAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4C895FF61342A872D3DBC155 /* Pods_MontagApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MontagApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EE9F6F62EE173103DAA727 /* Pods-MontagApp-MontagAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MontagApp-MontagAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MontagApp-MontagAppUITests/Pods-MontagApp-MontagAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +194,7 @@
 				327F689D26681FF700F2641A /* Cells */,
 				327F688A2667BFA700F2641A /* advertisementsView.storyboard */,
 				327F68922667CB4000F2641A /* AdvertisementsViewController.swift */,
+				3278B24F266A6747006329FE /* TableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,6 +222,7 @@
 			children = (
 				327F68AE2668332A00F2641A /* AdverisemenTableViewCell */,
 				327F689E26681FF700F2641A /* CategriesCollectionViewCell */,
+				3278B254266A6F2C006329FE /* UITableViewVibrantCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -379,6 +389,8 @@
 				32B0F11A2666E90B00DF8566 /* UIResponder + KeyboardExtension.swift */,
 				32B0F1232666E90B00DF8566 /* UITextField + DoneBtnExtension.swift */,
 				32B0F1212666E90B00DF8566 /* UIView+Constraints.swift */,
+				32F597332669BE3F00099F2F /* SideMenu.swift */,
+				3278B25C266A7922006329FE /* RoundCornderButton.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -708,8 +720,10 @@
 				32B0F1292666E90B00DF8566 /* Observable.swift in Sources */,
 				32B0F1262666E90B00DF8566 /* Checkbox.swift in Sources */,
 				32B0F12D2666E90B00DF8566 /* LogoAnimationView.swift in Sources */,
+				3278B25D266A7922006329FE /* RoundCornderButton.swift in Sources */,
 				327F68BA2668380B00F2641A /* Advertisement.swift in Sources */,
 				32B0F0C02666E1F700DF8566 /* ViewController.swift in Sources */,
+				3278B255266A6F2C006329FE /* UITableViewVibrantCell.swift in Sources */,
 				32B0F1282666E90B00DF8566 /* Localize.swift in Sources */,
 				32B0F1502666F42B00DF8566 /* SignUpTableViewController.swift in Sources */,
 				32E3D84C26692C5F00C83AB8 /* CategoryListViewModel.swift in Sources */,
@@ -732,6 +746,7 @@
 				32B0F1002666E56B00DF8566 /* LoginViewController.swift in Sources */,
 				327F68BF2668399C00F2641A /* AdvertisementsAPIMagager.swift in Sources */,
 				32B0F1322666E90B00DF8566 /* ShadowForUIVIew.swift in Sources */,
+				3278B250266A6747006329FE /* TableViewController.swift in Sources */,
 				32B0F12B2666E90B00DF8566 /* HandleKeboardShowExtenstion.swift in Sources */,
 				32B0F0FB2666E56200DF8566 /* LoginVIewController + TextFiledDelegate.swift in Sources */,
 				32B0F1302666E90B00DF8566 /* UITextField + DoneBtnExtension.swift in Sources */,
@@ -739,6 +754,7 @@
 				32B0F12E2666E90B00DF8566 /* UIView+Constraints.swift in Sources */,
 				327F68AA2668236B00F2641A /* Category.swift in Sources */,
 				327F68A12668208000F2641A /* CategoiesCollectionViewCell.swift in Sources */,
+				32F597342669BE3F00099F2F /* SideMenu.swift in Sources */,
 				32B0F1382666E95D00DF8566 /* User.swift in Sources */,
 				32B0F15D2666FE2400DF8566 /* SignupManager.swift in Sources */,
 			);

@@ -26,6 +26,9 @@
                                             <constraint firstAttribute="width" constant="35" id="uTz-QB-Zyt"/>
                                         </constraints>
                                         <state key="normal" image="menu"/>
+                                        <connections>
+                                            <segue destination="Bpk-1R-huR" kind="presentation" id="Oze-x7-NOX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ee-kX-bgH">
                                         <rect key="frame" x="314" y="15" width="30" height="30"/>
@@ -180,6 +183,178 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGm-Ns-bKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+        </scene>
+        <!--Side Menu Table View Controller-->
+        <scene sceneID="CGs-a9-LbB">
+            <objects>
+                <tableViewController id="chG-la-zkU" customClass="SideMenuTableViewController" customModule="MontagApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WXs-AK-RLx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="h71-0Q-RMB">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="136" id="zQp-9U-sc1" customClass="UITableViewVibrantCell" customModule="MontagApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="136"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zQp-9U-sc1" id="ggi-Dp-1c3">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="136"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="jAm-V1-fNk">
+                                                    <rect key="frame" x="107" y="3" width="200" height="130"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="37F-ge-awK"/>
+                                                        <constraint firstAttribute="height" constant="130" id="Ush-5s-rAV"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jAm-V1-fNk" firstAttribute="centerX" secondItem="ggi-Dp-1c3" secondAttribute="centerX" id="Y79-kI-sx9"/>
+                                                <constraint firstItem="jAm-V1-fNk" firstAttribute="centerY" secondItem="ggi-Dp-1c3" secondAttribute="centerY" id="yVA-qY-bP4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="oY9-Qj-19u" customClass="UITableViewVibrantCell" customModule="MontagApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="164" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oY9-Qj-19u" id="jg9-vc-Oj2">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeQ-si-aIA">
+                                                    <rect key="frame" x="20" y="8" width="374" height="34"/>
+                                                    <color key="backgroundColor" red="0.12126223" green="0.71409296990000004" blue="0.96170288319999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <state key="normal" title="تسجيل الدخول">
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qeQ-si-aIA" firstAttribute="top" secondItem="jg9-vc-Oj2" secondAttribute="top" constant="8" id="5Y8-Bf-hav"/>
+                                                <constraint firstItem="qeQ-si-aIA" firstAttribute="leading" secondItem="jg9-vc-Oj2" secondAttribute="leading" constant="20" id="J4d-bZ-1LB"/>
+                                                <constraint firstAttribute="bottom" secondItem="qeQ-si-aIA" secondAttribute="bottom" constant="8" id="P5g-FO-MFc"/>
+                                                <constraint firstAttribute="trailing" secondItem="qeQ-si-aIA" secondAttribute="trailing" constant="20" id="lMT-f7-sUX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="signInButton" destination="qeQ-si-aIA" id="xep-gd-d4D"/>
+                                            <segue destination="8UO-mb-967" kind="presentation" id="p4c-vw-xqI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="XQh-da-IME" customClass="UITableViewVibrantCell" customModule="MontagApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="214" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XQh-da-IME" id="npY-W2-soV">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgW-wF-2KH">
+                                                    <rect key="frame" x="20" y="8" width="374" height="34"/>
+                                                    <color key="backgroundColor" red="0.12126223" green="0.71409296990000004" blue="0.96170288319999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <state key="normal" title="تسجيل الدخول">
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="DgW-wF-2KH" secondAttribute="bottom" constant="8" id="3wh-5l-ty5"/>
+                                                <constraint firstItem="DgW-wF-2KH" firstAttribute="leading" secondItem="npY-W2-soV" secondAttribute="leading" constant="20" id="F2g-oA-dJG"/>
+                                                <constraint firstItem="DgW-wF-2KH" firstAttribute="top" secondItem="npY-W2-soV" secondAttribute="top" constant="8" id="NyP-K6-Loe"/>
+                                                <constraint firstAttribute="trailing" secondItem="DgW-wF-2KH" secondAttribute="trailing" constant="20" id="VZy-a6-fdI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="buttonTwo" destination="DgW-wF-2KH" id="tZ7-w5-GSm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="TNT-WJ-4dj" customClass="UITableViewVibrantCell" customModule="MontagApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="264" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TNT-WJ-4dj" id="CEa-jl-k8R">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txm-dH-m5Y">
+                                                    <rect key="frame" x="20" y="8" width="374" height="34"/>
+                                                    <color key="backgroundColor" red="0.12126223" green="0.71409296990000004" blue="0.96170288319999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <state key="normal" title="تسجيل الدخول">
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="txm-dH-m5Y" firstAttribute="leading" secondItem="CEa-jl-k8R" secondAttribute="leading" constant="20" id="JQj-Zc-FIY"/>
+                                                <constraint firstAttribute="trailing" secondItem="txm-dH-m5Y" secondAttribute="trailing" constant="20" id="Xbh-eF-xPY"/>
+                                                <constraint firstItem="txm-dH-m5Y" firstAttribute="top" secondItem="CEa-jl-k8R" secondAttribute="top" constant="8" id="aHm-Sy-8eQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="txm-dH-m5Y" secondAttribute="bottom" constant="8" id="asj-Bx-LAX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="fixedPages" destination="txm-dH-m5Y" id="WfS-6I-z41"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="chG-la-zkU" id="z1i-1w-mMw"/>
+                            <outlet property="delegate" destination="chG-la-zkU" id="UGp-k1-ac1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="I3u-Hk-gIa"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GlV-wu-xcb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708.69565217391312" y="-749.33035714285711"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="9GM-p9-1Og">
+            <objects>
+                <viewControllerPlaceholder id="8UO-mb-967" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uNC-Jj-vga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1329" y="-778"/>
+        </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="Wp2-CI-ko2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bpk-1R-huR" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="n3M-dA-wK7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="chG-la-zkU" kind="relationship" relationship="rootViewController" id="C8S-LD-tDx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I79-qv-B2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-201.44927536231884" y="-749.33035714285711"/>
         </scene>
     </scenes>
     <resources>

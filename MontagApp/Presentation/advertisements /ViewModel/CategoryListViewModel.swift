@@ -34,10 +34,24 @@ struct CategoryDataAccess {
     func getAllCategoies() ->[Category]
     {
         var categories = [Category]()
-        categories.append(Category(categoryName: "", categoryImage: ""))
-        categories.append(Category(categoryName: "", categoryImage: ""))
-        categories.append(Category(categoryName: "", categoryImage: ""))
-        categories.append(Category(categoryName: "", categoryImage: ""))
+        categories.append(Category(categoryName: "السيارات وقطع الغيار", categoryImage: "car3774"))
+        categories.append(Category(categoryName: "العقارات", categoryImage: "home4556"))
+        categories.append(Category(categoryName: "أجهزة إلكترونية وجوالات", categoryImage: "phones"))
+        categories.append(Category(categoryName: "الأثاث والديكور", categoryImage: "decoration"))
+        categories.append(Category(categoryName: "سكراب", categoryImage: "old_iron"))
+        categories.append(Category(categoryName: "الأسر المنتجة", categoryImage: "pastries"))
+//        categories.append(Category(categoryName: "", categoryImage: ""))
+//        categories.append(Category(categoryName: "", categoryImage: ""))
+//        categories.append(Category(categoryName: "", categoryImage: ""))
+//        categories.append(Category(categoryName: "", categoryImage: ""))
+//        categories.append(Category(categoryName: "", categoryImage: ""))
+//        categories.append(Category(categoryName: "", categoryImage: ""))
+//        categories.append(Category(categoryName: "", categoryImage: ""))
+//        categories.append(Category(categoryName: "", categoryImage: ""))
+//        categories.append(Category(categoryName: "", categoryImage: ""))
+//        categories.append(Category(categoryName: "", categoryImage: ""))
+//        categories.append(Category(categoryName: "", categoryImage: ""))
+//        categories.append(Category(categoryName: "", categoryImage: ""))
         return categories
     }
 }

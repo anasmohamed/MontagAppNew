@@ -104,7 +104,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="jhn-b3-e6s"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yi7-Fg-fZQ">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yi7-Fg-fZQ">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -138,7 +138,7 @@
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ngr-bz-PxT">
                                         <rect key="frame" x="414" y="11" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Lyw-fq-LAW">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="Lyw-fq-LAW">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
@@ -174,6 +174,7 @@
                         <outlet property="addSignBtn" destination="gZF-Oh-oZN" id="6Pz-8h-GmJ"/>
                         <outlet property="addYourAdvertisementView" destination="N4F-oc-Tac" id="gHQ-7Z-2nf"/>
                         <outlet property="advertisementsTableView" destination="ORV-V7-GLE" id="By0-qd-H3Y"/>
+                        <outlet property="categriesCollectionView" destination="3mb-Fh-2WS" id="Ueh-jO-lUj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGm-Ns-bKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

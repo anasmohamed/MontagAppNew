@@ -9,6 +9,7 @@ import UIKit
 
 class AdvertisementsViewController: UIViewController {
     
+    @IBOutlet weak var categriesCollectionView: UICollectionView!
     @IBOutlet weak var advertisementsTableView: UITableView!
     @IBOutlet weak var addSignBtn: UIButton!
     @IBOutlet weak var addAdveretisementBtn: UIButton!
@@ -22,7 +23,10 @@ class AdvertisementsViewController: UIViewController {
         addSignBtn.roundCorners([.topRight,.bottomRight], radius: 5)
         advertisementsTableView.delegate = self
         advertisementsTableView.dataSource = self
+        categriesCollectionView.delegate = self
+        categriesCollectionView.dataSource = self
         setupTableView()
+        setupCollectionView()
         bindData()
         fetchData()
         

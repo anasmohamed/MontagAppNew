@@ -7,15 +7,19 @@
 
 import Foundation
 class AdvertisementsListViewModel {
+    var categoryListViewModel : CategoryListViewModel!
+    private var categoryDataAccess = CategoryDataAccess()
     private var advertisementsAPIMagager = AdvertisementsAPIMagager()
     private var advertisements: [Advertisement] = [Advertisement]()
     {
-        
         didSet{
             reloadTableView.value = advertisements
         }
     }
     
+    init() {
+        self.categoryListViewModel = CategoryListViewModel(categoryDataAccess: categoryDataAccess)
+    }
     var numberOfItems: Int {
         return advertisements.count
     }

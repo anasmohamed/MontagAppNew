@@ -53,6 +53,7 @@
 		32B0F163266701C800DF8566 /* SignupViewController + TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F162266701C800DF8566 /* SignupViewController + TextFieldDelegate.swift */; };
 		32E3D84C26692C5F00C83AB8 /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3D84B26692C5F00C83AB8 /* CategoryListViewModel.swift */; };
 		32E4B9922667A5FE001C6F01 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E4B9912667A5FE001C6F01 /* ResponseError.swift */; };
+		32F5972C26699D6C00099F2F /* HomeViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F5972B26699D6C00099F2F /* HomeViewViewModel.swift */; };
 		3697598BFFFB616D6020378A /* Pods_MontagApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C895FF61342A872D3DBC155 /* Pods_MontagApp.framework */; };
 		8C4B6DA7FD994E3656C710E3 /* Pods_MontagApp_MontagAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E80FD2C5321F70D9A38BC0E /* Pods_MontagApp_MontagAppUITests.framework */; };
 		D286D100E73F7927C19CCF2F /* Pods_MontagAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAA398EF3F93540F42C0EEF /* Pods_MontagAppTests.framework */; };
@@ -130,6 +131,7 @@
 		32B0F162266701C800DF8566 /* SignupViewController + TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignupViewController + TextFieldDelegate.swift"; sourceTree = "<group>"; };
 		32E3D84B26692C5F00C83AB8 /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
 		32E4B9912667A5FE001C6F01 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		32F5972B26699D6C00099F2F /* HomeViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewModel.swift; sourceTree = "<group>"; };
 		432749F83A7CDCB1493F9995 /* Pods-MontagApp-MontagAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MontagApp-MontagAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MontagApp-MontagAppUITests/Pods-MontagApp-MontagAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4C895FF61342A872D3DBC155 /* Pods_MontagApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MontagApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EE9F6F62EE173103DAA727 /* Pods-MontagApp-MontagAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MontagApp-MontagAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MontagApp-MontagAppUITests/Pods-MontagApp-MontagAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			children = (
 				327F68DB26684DBD00F2641A /* AdvertisementsListViewModel.swift */,
 				32E3D84B26692C5F00C83AB8 /* CategoryListViewModel.swift */,
+				32F5972B26699D6C00099F2F /* HomeViewViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -711,6 +714,7 @@
 				32B0F1502666F42B00DF8566 /* SignUpTableViewController.swift in Sources */,
 				32E3D84C26692C5F00C83AB8 /* CategoryListViewModel.swift in Sources */,
 				327F68CF2668484F00F2641A /* AdvertisementsViewController + CollectionView.swift in Sources */,
+				32F5972C26699D6C00099F2F /* HomeViewViewModel.swift in Sources */,
 				32E4B9922667A5FE001C6F01 /* ResponseError.swift in Sources */,
 				32B0F12F2666E90B00DF8566 /* LoadingIndicatorView.swift in Sources */,
 				32B0F12A2666E90B00DF8566 /* AlertController.swift in Sources */,

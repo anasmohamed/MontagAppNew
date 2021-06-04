@@ -9,43 +9,46 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4Bh-W4-b6P" customClass="CategoiesCollectionViewCell" customModule="MontagApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="101" height="143"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoiesCollectionViewCell" id="k4O-EH-gSb" customClass="CategoiesCollectionViewCell" customModule="MontagApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="92" height="158"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="e39-lo-Lrh">
-                <rect key="frame" x="0.0" y="0.0" width="101" height="143"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vlY-ee-FkQ">
+                <rect key="frame" x="0.0" y="0.0" width="92" height="158"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qpi-ko-Nbu">
-                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="articles" translatesAutoresizingMaskIntoConstraints="NO" id="aaR-ri-9RZ">
+                        <rect key="frame" x="1" y="0.0" width="90" height="90"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="100" id="5pb-Uc-svS"/>
-                            <constraint firstAttribute="width" constant="100" id="GN8-aB-vcH"/>
+                            <constraint firstAttribute="height" constant="90" id="txl-9x-jeE"/>
+                            <constraint firstAttribute="width" constant="90" id="wTl-hP-lWx"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d01-IV-4J5">
-                        <rect key="frame" x="0.0" y="114" width="100" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uz2-e9-EUI">
+                        <rect key="frame" x="0.0" y="104" width="92" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="backgroundColor" red="0.20392156859999999" green="0.20392156859999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="Qpi-ko-Nbu" secondAttribute="trailing" id="ATk-Th-yCz"/>
-                    <constraint firstItem="Qpi-ko-Nbu" firstAttribute="leading" secondItem="e39-lo-Lrh" secondAttribute="leading" id="ElF-6X-NvE"/>
-                    <constraint firstAttribute="trailing" secondItem="d01-IV-4J5" secondAttribute="trailing" id="Wga-d9-HcK"/>
-                    <constraint firstAttribute="bottom" secondItem="d01-IV-4J5" secondAttribute="bottom" constant="8" id="lln-eG-46h"/>
-                    <constraint firstItem="d01-IV-4J5" firstAttribute="leading" secondItem="e39-lo-Lrh" secondAttribute="leading" id="nNB-9o-Q5r"/>
-                    <constraint firstItem="Qpi-ko-Nbu" firstAttribute="top" secondItem="e39-lo-Lrh" secondAttribute="top" id="xMl-ms-3bT"/>
+                    <constraint firstItem="uz2-e9-EUI" firstAttribute="centerX" secondItem="aaR-ri-9RZ" secondAttribute="centerX" id="32c-Pt-OO0"/>
+                    <constraint firstItem="aaR-ri-9RZ" firstAttribute="top" secondItem="vlY-ee-FkQ" secondAttribute="top" id="Ei7-jd-UV6"/>
+                    <constraint firstItem="uz2-e9-EUI" firstAttribute="leading" secondItem="vlY-ee-FkQ" secondAttribute="leading" id="GBG-XS-N1g"/>
+                    <constraint firstItem="aaR-ri-9RZ" firstAttribute="centerX" secondItem="vlY-ee-FkQ" secondAttribute="centerX" id="arV-pD-xki"/>
+                    <constraint firstItem="uz2-e9-EUI" firstAttribute="top" secondItem="aaR-ri-9RZ" secondAttribute="bottom" constant="14" id="rOb-vn-R30"/>
+                    <constraint firstAttribute="trailing" secondItem="uz2-e9-EUI" secondAttribute="trailing" id="v3d-PZ-TKd"/>
                 </constraints>
             </collectionViewCellContentView>
-            <size key="customSize" width="101" height="143"/>
+            <size key="customSize" width="92" height="158"/>
             <connections>
-                <outlet property="categoryImageView" destination="Qpi-ko-Nbu" id="3hx-VA-I8G"/>
-                <outlet property="categoryNameLbl" destination="d01-IV-4J5" id="xjm-aE-fFB"/>
+                <outlet property="categoryImageView" destination="aaR-ri-9RZ" id="QyG-gJ-kON"/>
+                <outlet property="categoryNameLbl" destination="uz2-e9-EUI" id="ffu-Ze-5kf"/>
             </connections>
-            <point key="canvasLocation" x="168.84057971014494" y="146.98660714285714"/>
+            <point key="canvasLocation" x="1.4492753623188408" y="152.67857142857142"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="articles" width="1336" height="648"/>
+    </resources>
 </document>

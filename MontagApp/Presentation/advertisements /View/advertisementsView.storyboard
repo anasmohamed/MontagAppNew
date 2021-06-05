@@ -237,6 +237,9 @@
                                                                     <real key="value" value="20"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="signInBtnDidTapped:" destination="chG-la-zkU" eventType="touchUpInside" id="RaK-pm-0NA"/>
+                                                            </connections>
                                                         </button>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="EOw-wC-UJw">
                                                             <rect key="frame" x="320" y="10" width="30" height="20"/>
@@ -291,7 +294,7 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </button>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="14j-ea-Nfx">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="open_book" translatesAutoresizingMaskIntoConstraints="NO" id="14j-ea-Nfx">
                                                             <rect key="frame" x="320" y="10" width="30" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="6vk-KF-8T6"/>
@@ -340,7 +343,7 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </button>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="MTv-Kx-byL">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list" translatesAutoresizingMaskIntoConstraints="NO" id="MTv-Kx-byL">
                                                             <rect key="frame" x="320" y="10" width="30" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="P6b-kU-OPj"/>
@@ -389,7 +392,7 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </button>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="yD6-sJ-jOC">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="yD6-sJ-jOC">
                                                             <rect key="frame" x="320" y="10" width="30" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="30" id="XVM-cE-YnZ"/>
@@ -438,7 +441,7 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </button>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="6cl-bt-ofx">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call (1)" translatesAutoresizingMaskIntoConstraints="NO" id="6cl-bt-ofx">
                                                             <rect key="frame" x="320" y="10" width="30" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="30" id="aoY-W3-gRm"/>
@@ -519,8 +522,12 @@
     </scenes>
     <resources>
         <image name="app_logo" width="251" height="179"/>
+        <image name="call (1)" width="128" height="128"/>
+        <image name="info" width="512" height="512"/>
+        <image name="list" width="512" height="512"/>
         <image name="login" width="512" height="512"/>
         <image name="menu" width="256" height="256"/>
+        <image name="open_book" width="512" height="512"/>
         <image name="plus-symbol-button-2" width="128" height="128"/>
         <image name="search_iocn" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">

@@ -9,6 +9,7 @@ import UIKit
 
 class AdvertisementsViewController: UIViewController {
     
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var categriesCollectionView: UICollectionView!
     @IBOutlet weak var advertisementsTableView: UITableView!
     @IBOutlet weak var addSignBtn: UIButton!
@@ -34,10 +35,13 @@ class AdvertisementsViewController: UIViewController {
     }
     func bindData() {
         advertisementsListViewModel.reloadTableView.bind {_ in
-            
+//            LoadingIndicatorView.hide()
+            self.indicator.stopAnimating()
             self.advertisementsTableView.reloadData()
         }}
     func fetchData() {
+//        LoadingIndicatorView.show()
+        indicator.startAnimating()
         advertisementsListViewModel.fetchData()
        }
        

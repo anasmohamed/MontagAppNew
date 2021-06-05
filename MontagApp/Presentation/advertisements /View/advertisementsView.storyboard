@@ -156,6 +156,10 @@
                                     <outlet property="delegate" destination="y57-On-6zS" id="nLt-Rh-Zjc"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Ao6-mD-fML">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lCM-W7-ws4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -165,11 +169,13 @@
                             <constraint firstItem="pQt-E5-vhH" firstAttribute="leading" secondItem="lCM-W7-ws4" secondAttribute="leading" id="R75-sT-XLy"/>
                             <constraint firstItem="pQt-E5-vhH" firstAttribute="trailing" secondItem="lCM-W7-ws4" secondAttribute="trailing" id="VNb-aP-ypg"/>
                             <constraint firstItem="3mb-Fh-2WS" firstAttribute="trailing" secondItem="lCM-W7-ws4" secondAttribute="trailing" id="bGm-t5-nvy"/>
+                            <constraint firstItem="Ao6-mD-fML" firstAttribute="centerX" secondItem="7Q0-9B-IlE" secondAttribute="centerX" id="d84-Un-gSH"/>
                             <constraint firstItem="ORV-V7-GLE" firstAttribute="top" secondItem="3mb-Fh-2WS" secondAttribute="bottom" id="dYA-td-R2T"/>
                             <constraint firstItem="3mb-Fh-2WS" firstAttribute="top" secondItem="pQt-E5-vhH" secondAttribute="bottom" id="hva-Ag-TRY"/>
                             <constraint firstItem="ORV-V7-GLE" firstAttribute="leading" secondItem="lCM-W7-ws4" secondAttribute="leading" id="pAL-Yc-9ef"/>
                             <constraint firstItem="3mb-Fh-2WS" firstAttribute="leading" secondItem="lCM-W7-ws4" secondAttribute="leading" id="r60-8P-YZc"/>
                             <constraint firstItem="pQt-E5-vhH" firstAttribute="top" secondItem="7Q0-9B-IlE" secondAttribute="top" constant="37" id="r9n-Jh-g3x"/>
+                            <constraint firstItem="Ao6-mD-fML" firstAttribute="centerY" secondItem="7Q0-9B-IlE" secondAttribute="centerY" id="yQQ-14-taH"/>
                         </constraints>
                     </view>
                     <connections>
@@ -178,6 +184,7 @@
                         <outlet property="addYourAdvertisementView" destination="N4F-oc-Tac" id="gHQ-7Z-2nf"/>
                         <outlet property="advertisementsTableView" destination="ORV-V7-GLE" id="By0-qd-H3Y"/>
                         <outlet property="categriesCollectionView" destination="3mb-Fh-2WS" id="Ueh-jO-lUj"/>
+                        <outlet property="indicator" destination="Ao6-mD-fML" id="rmK-cv-4FZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGm-Ns-bKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -16,6 +16,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var createNewAccountBtn: UIButton!
     
+    @IBOutlet weak var rememberMeCheckbox: Checkbox!
     var loginViewModel = LoginViewModel()
     
     
@@ -56,6 +57,7 @@ class LoginViewController: UIViewController {
     }
     func handeIsUserLogin()
     {
+        
         if !(UserDefaults.standard.string(forKey: "token")?.isEmpty ?? true){
             navigateToMainViewController()
         }
@@ -126,8 +128,8 @@ class LoginViewController: UIViewController {
     }
     
     func navigateToMainViewController() {
-        let homeViewStoryboard = UIStoryboard.init(name: "MainView", bundle: nil)
-        let homeViewController = homeViewStoryboard.instantiateViewController(withIdentifier: "HomeTabBar")
+        let homeViewStoryboard = UIStoryboard.init(name: "advertisementsView", bundle: nil)
+        let homeViewController = homeViewStoryboard.instantiateViewController(withIdentifier: "AdvertisementsViewController")
         homeViewController.modalPresentationStyle = .fullScreen
         
         self.present(homeViewController, animated: true, completion: nil)

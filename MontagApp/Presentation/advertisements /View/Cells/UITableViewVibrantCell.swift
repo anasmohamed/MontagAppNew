@@ -22,15 +22,19 @@ open class UITableViewVibrantCell: UITableViewCell {
             updateBlur()
         }
     }
-    
+    open override func didMoveToSuperview() {
+        super.didMoveToSuperview()
+      
+    }
     // For registering with UITableView without subclassing otherwise dequeuing instance of the cell causes an exception
     public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
     }
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-
+     
         vibrancyView.frame = bounds
         vibrancyView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         for view in subviews {
@@ -63,5 +67,4 @@ open class UITableViewVibrantCell: UITableViewCell {
             selectedBackgroundView = defaultSelectedBackgroundView
         }
     }
-
 }

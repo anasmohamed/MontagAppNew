@@ -69,7 +69,7 @@ struct CategoryDataAccess {
         categories.append(Category(categoryName: "الأثاث والديكور", categoryImage: "decoration"))
         categories.append(Category(categoryName: "السيارات وقطع الغيار", categoryImage: "car3774"))
         
-        
+        categories.reverse()
         
         //        categories.append(Category(categoryName: "", categoryImage: ""))
         //        categories.append(Category(categoryName: "", categoryImage: ""))

@@ -101,7 +101,7 @@
                                     <constraint firstItem="0Ee-kX-bgH" firstAttribute="top" secondItem="pQt-E5-vhH" secondAttribute="top" constant="15" id="v7W-id-0wB"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3mb-Fh-2WS">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3mb-Fh-2WS">
                                 <rect key="frame" x="0.0" y="97" width="414" height="150"/>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.20392156859999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -115,7 +115,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="iXj-uy-VoX">
-                                        <rect key="frame" x="0.0" y="11" width="128" height="128"/>
+                                        <rect key="frame" x="414" y="11" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oAn-mL-3yI">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -123,7 +123,7 @@
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6qQ-uX-KU7">
-                                        <rect key="frame" x="138" y="11" width="128" height="128"/>
+                                        <rect key="frame" x="276" y="11" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8cX-N6-x4R">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -131,7 +131,7 @@
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TxJ-eF-YNJ">
-                                        <rect key="frame" x="276" y="11" width="128" height="128"/>
+                                        <rect key="frame" x="138" y="11" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jod-56-h8D">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -139,9 +139,9 @@
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ngr-bz-PxT">
-                                        <rect key="frame" x="414" y="11" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="11" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="Lyw-fq-LAW">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Lyw-fq-LAW">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>

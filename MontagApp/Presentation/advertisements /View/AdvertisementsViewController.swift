@@ -30,8 +30,15 @@ class AdvertisementsViewController: UIViewController {
         setupCollectionView()
         bindData()
         fetchData()
-        
+        handeIsUserLogin()
         // Do any additional setup after loading the view.
+    }
+    func handeIsUserLogin()
+    {
+        
+        if !(UserDefaults.standard.string(forKey: "token")?.isEmpty ?? true){
+            
+        }
     }
     func bindData() {
         advertisementsListViewModel.reloadTableView.bind {_ in
@@ -46,6 +53,19 @@ class AdvertisementsViewController: UIViewController {
        }
        
        
+    @IBAction func menuBtnDidTapped(_ sender: Any) {
+        let sideMenuStoryboard = UIStoryboard(name: "advertisementsView", bundle: nil)
+        if !(UserDefaults.standard.string(forKey: "token")!.isEmpty){
+            let sideMenuViewController = sideMenuStoryboard.instantiateViewController(identifier: "LoginSideMenuNavigationController") as! UINavigationController
+            self.present(sideMenuViewController, animated: true)
+
+        }else{
+            let sideMenuViewController = sideMenuStoryboard.instantiateViewController(identifier: "SideMenuNavigationController") as! UINavigationController
+            self.present(sideMenuViewController, animated: true)
+        }
+       
+
+    }
     /*
      // MARK: - Navigation
      

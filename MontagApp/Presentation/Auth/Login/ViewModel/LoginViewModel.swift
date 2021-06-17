@@ -22,8 +22,8 @@ class LoginViewModel {
     var isEmailTextFieldHighLighted: Observable<Bool> = Observable(false)
     var isPasswordTextFieldHighLighted: Observable<Bool> = Observable(false)
     var errorMessage: Observable<String?> = Observable(nil)
-    var loginSuccess: Observable<String?> = Observable(nil)
-
+    var loginSuccess: Observable<User?> = Observable(nil)
+    
     //
     //    init(loginManager: LoginManager) {
     //        self.loginManager = loginManager
@@ -37,10 +37,13 @@ class LoginViewModel {
     
     
     func login() {
-        loginManager.loginWithCredentials(email: email, password: password) { [weak self] (user,error) in
+        loginManager.loginWithCredentials(email: email, password: password) { [weak self] (user,message,error) in
             guard let error = error else {
-                self?.loginSuccess.value = user
-
+                if message == nil{
+                    self?.loginSuccess.value = user
+                }else{
+                    self?.errorMessage.value = message
+                }
                 return
             }
             
@@ -61,12 +64,7 @@ class LoginViewModel {
             return .Incorrect
         }
         
-        if !EmailValidation.isValidEmail(email)
-        {
-            errorMessage.value = "يجب إدخال البريد الإلكترونى صحيح".localized
-            isEmailTextFieldHighLighted.value = true
-            return .Incorrect
-        }
+       
         if password.isEmpty {
             errorMessage.value = "يجب إدخال كلمة المرور".localized
             isPasswordTextFieldHighLighted.value = true

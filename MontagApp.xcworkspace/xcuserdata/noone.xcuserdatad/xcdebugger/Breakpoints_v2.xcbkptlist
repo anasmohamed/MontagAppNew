@@ -23,178 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8A5D2F90-5E62-4DA4-997B-86EEFC3359B7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MontagApp/Presentation/advertisements /View/Cells/AdverisemenTableViewCell/AdvertisementsTableViewCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "item"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A4DF466F-1F35-400E-B80C-D70C57E6AB28"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MontagApp/Presentation/advertisements /View/Cells/AdverisemenTableViewCell/AdvertisementsTableViewCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "item"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "62BF3DA6-3B7B-4934-A284-8BD73072AF4A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MontagApp/Presentation/advertisements /View/Cells/AdverisemenTableViewCell/AdvertisementsTableViewCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "item"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A1250B60-2F81-4073-8678-7E374266B611"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MontagApp/Presentation/advertisements /View/Cells/AdverisemenTableViewCell/AdvertisementsTableViewCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "item"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C6C7F24A-DDBA-4036-B006-62150BA7368C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MontagApp/Presentation/advertisements /View/Cells/AdverisemenTableViewCell/AdvertisementsTableViewCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "item"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "C6C7F24A-DDBA-4036-B006-62150BA7368C - e3fa7613d81a32ef"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MontagApp.AdvertisementsTableViewCell.item.getter : MontagApp.Advertisement"
-                  moduleName = "MontagApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/noone/Desktop/MontagApp/MontagApp/Presentation/advertisements%20/View/Cells/AdverisemenTableViewCell/AdvertisementsTableViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "372">
-               </Location>
-               <Location
-                  uuid = "C6C7F24A-DDBA-4036-B006-62150BA7368C - caf1a854a2841ee3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MontagApp.AdvertisementsTableViewCell.item.setter : MontagApp.Advertisement"
-                  moduleName = "MontagApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/noone/Desktop/MontagApp/MontagApp/Presentation/advertisements%20/View/Cells/AdverisemenTableViewCell/AdvertisementsTableViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "304">
-               </Location>
-               <Location
-                  uuid = "C6C7F24A-DDBA-4036-B006-62150BA7368C - edefec634afa5cc6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MontagApp.AdvertisementsTableViewCell.item.modify : MontagApp.Advertisement"
-                  moduleName = "MontagApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/noone/Desktop/MontagApp/MontagApp/Presentation/advertisements%20/View/Cells/AdverisemenTableViewCell/AdvertisementsTableViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "22">
-               </Location>
-               <Location
-                  uuid = "C6C7F24A-DDBA-4036-B006-62150BA7368C - 817a5187e8cf4736"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MontagApp.AdvertisementsTableViewCell.item.modify : MontagApp.Advertisement with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "MontagApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/noone/Desktop/MontagApp/MontagApp/Presentation/advertisements%20/View/Cells/AdverisemenTableViewCell/AdvertisementsTableViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "10">
-               </Location>
-               <Location
-                  uuid = "C6C7F24A-DDBA-4036-B006-62150BA7368C - 35c88f1c7e46812e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MontagApp.AdvertisementsTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; MontagApp.AdvertisementsTableViewCell"
-                  moduleName = "MontagApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/noone/Desktop/MontagApp/MontagApp/Presentation/advertisements%20/View/Cells/AdverisemenTableViewCell/AdvertisementsTableViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "1476">
-               </Location>
-               <Location
-                  uuid = "C6C7F24A-DDBA-4036-B006-62150BA7368C - 378a706d4d820bd4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MontagApp.AdvertisementsTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MontagApp.AdvertisementsTableViewCell&gt;"
-                  moduleName = "MontagApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/noone/Desktop/MontagApp/MontagApp/Presentation/advertisements%20/View/Cells/AdverisemenTableViewCell/AdvertisementsTableViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "1417">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "F6E7C863-9406-4B49-9D16-CF654BB10612"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -206,6 +34,54 @@
             endingLineNumber = "2"
             landmarkName = "unknown"
             landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5000A3F7-4E31-4749-AD35-C76A4E55ECD0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MontagApp/Presentation/Auth/Login/View/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "bindData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5BC7B0DD-0950-479B-94C5-96CC66838376"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MontagApp/Presentation/Auth/Login/View/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "bindData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B89BD684-3FF0-460E-BE7F-2F791973496E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MontagApp/Presentation/Auth/Login/View/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "bindData()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

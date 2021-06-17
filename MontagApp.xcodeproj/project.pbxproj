@@ -56,6 +56,7 @@
 		32B0F163266701C800DF8566 /* SignupViewController + TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F162266701C800DF8566 /* SignupViewController + TextFieldDelegate.swift */; };
 		32E3D84C26692C5F00C83AB8 /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3D84B26692C5F00C83AB8 /* CategoryListViewModel.swift */; };
 		32E4B9922667A5FE001C6F01 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E4B9912667A5FE001C6F01 /* ResponseError.swift */; };
+		32F56BEB267BBF4A00696AD1 /* AddAdvertisementView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F56BEA267BBF4A00696AD1 /* AddAdvertisementView.storyboard */; };
 		32F5972C26699D6C00099F2F /* HomeViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F5972B26699D6C00099F2F /* HomeViewViewModel.swift */; };
 		32F597342669BE3F00099F2F /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F597332669BE3F00099F2F /* SideMenu.swift */; };
 		3697598BFFFB616D6020378A /* Pods_MontagApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C895FF61342A872D3DBC155 /* Pods_MontagApp.framework */; };
@@ -138,6 +139,7 @@
 		32B0F162266701C800DF8566 /* SignupViewController + TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignupViewController + TextFieldDelegate.swift"; sourceTree = "<group>"; };
 		32E3D84B26692C5F00C83AB8 /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
 		32E4B9912667A5FE001C6F01 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		32F56BEA267BBF4A00696AD1 /* AddAdvertisementView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddAdvertisementView.storyboard; sourceTree = "<group>"; };
 		32F5972B26699D6C00099F2F /* HomeViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewModel.swift; sourceTree = "<group>"; };
 		32F597332669BE3F00099F2F /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		432749F83A7CDCB1493F9995 /* Pods-MontagApp-MontagAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MontagApp-MontagAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MontagApp-MontagAppUITests/Pods-MontagApp-MontagAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 		32B0F0EE2666E43F00DF8566 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				32F56BE8267BBEFF00696AD1 /* AddAdvertisement */,
 				327F68862667BE4400F2641A /* advertisements  */,
 				32B0F0EF2666E47700DF8566 /* Auth */,
 			);
@@ -450,6 +453,22 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		32F56BE8267BBEFF00696AD1 /* AddAdvertisement */ = {
+			isa = PBXGroup;
+			children = (
+				32F56BE9267BBF2600696AD1 /* View */,
+			);
+			path = AddAdvertisement;
+			sourceTree = "<group>";
+		};
+		32F56BE9267BBF2600696AD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32F56BEA267BBF4A00696AD1 /* AddAdvertisementView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D4F99FAB427E436572A2F05C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -583,6 +602,7 @@
 			files = (
 				32B0F0F52666E4EF00DF8566 /* LoginView.storyboard in Resources */,
 				327F68B22668336A00F2641A /* AdvertisementsTableViewCell.xib in Resources */,
+				32F56BEB267BBF4A00696AD1 /* AddAdvertisementView.storyboard in Resources */,
 				32B0F0C82666E1F900DF8566 /* LaunchScreen.storyboard in Resources */,
 				327F68A22668208000F2641A /* CategoiesCollectionViewCell.xib in Resources */,
 				32B0F14B2666EC4000DF8566 /* SignUpView.storyboard in Resources */,

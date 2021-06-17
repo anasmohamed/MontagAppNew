@@ -10,10 +10,10 @@ class SignupViewModel {
     private let signupManager  = SignUpAPIManager()
     private var user = User(){
         didSet{
-            advertiserName = user.advertiserName
+            advertiserName = user.name
             password = user.password
             email = user.email
-            mobileNumber = user.mobileNumber
+            mobileNumber = user.mobile
             confirmPassword = user.confirmPassword
             
            
@@ -45,10 +45,10 @@ class SignupViewModel {
     
     //Here we update our model
     func updateCredentials(advertiserName: String, password: String, confirmPassword:String,mobileNumber: String,email: String,isTermsAndConditionChecked : Bool) {
-        user.advertiserName =  advertiserName
+        user.name =  advertiserName
         user.password = password
         user.email = email
-        user.mobileNumber = "\(mobileNumber)"
+        user.mobile = "\(mobileNumber)"
         user.confirmPassword = confirmPassword
         self.isTermsAndConditionChecked = isTermsAndConditionChecked
     }

@@ -27,24 +27,24 @@ class LoginViewController: UIViewController {
         bindData()
         setDelegates()
         handeIsUserLogin()
-//        self.tabBarController?.tabBar.isHidden = true
-//        self.navigationItem.setHidesBackButton(true, animated: true)
-//        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-////        createAccountStackView.addGestureRecognizer(tap)
+        //        self.tabBarController?.tabBar.isHidden = true
+        //        self.navigationItem.setHidesBackButton(true, animated: true)
+        //        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        ////        createAccountStackView.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
     }
-   
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.addKeyboardObserver()
-
+        
         
     }
     @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
-//        let signupStoryboard = UIStoryboard.init(name: "Signup", bundle: nil)
-//        let signupViewController = signupStoryboard.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
-//        self.navigationController?.pushViewController(signupViewController, animated: true)
+        //        let signupStoryboard = UIStoryboard.init(name: "Signup", bundle: nil)
+        //        let signupViewController = signupStoryboard.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
+        //        self.navigationController?.pushViewController(signupViewController, animated: true)
         
         
     }
@@ -85,31 +85,35 @@ class LoginViewController: UIViewController {
         
     }
     @IBAction func forgetPasswordBtnDidTapped(_ sender: Any) {
-      
-//        let forgetPasswordStoryboard = UIStoryboard.init(name: "ForgetPassword",bundle: nil)
-//        let forgetPasswordViewController = forgetPasswordStoryboard.instantiateViewController(withIdentifier: "ForgetPasswordViewController") as! ForgetPasswordViewController
-//        forgetPasswordViewController.modalTransitionStyle = .crossDissolve
-//        forgetPasswordViewController.modalPresentationStyle = .overCurrentContext
-//        self.present(forgetPasswordViewController,animated:true,completion:nil)
+        
+        //        let forgetPasswordStoryboard = UIStoryboard.init(name: "ForgetPassword",bundle: nil)
+        //        let forgetPasswordViewController = forgetPasswordStoryboard.instantiateViewController(withIdentifier: "ForgetPasswordViewController") as! ForgetPasswordViewController
+        //        forgetPasswordViewController.modalTransitionStyle = .crossDissolve
+        //        forgetPasswordViewController.modalPresentationStyle = .overCurrentContext
+        //        self.present(forgetPasswordViewController,animated:true,completion:nil)
         
         
     }
     
     func bindData() {
         loginViewModel.loginSuccess.bind { [self] in
-            if $0 == "success"{
+            if $0 != nil{
+                UserDefaults.standard.set($0?.email, forKey: "email")
+                UserDefaults.standard.set($0!.apiToken, forKey: "token")
                 navigateToMainViewController()
-
-            }else{
-
-                guard let errorMessage = $0 else { return }
-
-                // this is just one of many style options
-                self.view.makeToast(errorMessage, duration: 3.0, position: .bottom)
             }
-
+            
+            
         }
-        
+        loginViewModel.errorMessage.bind{[self] in
+            guard let errorMessage = $0 else { return }
+            var style = ToastStyle()
+            
+            // this is just one of many style options
+            style.messageColor = .white
+            style.backgroundColor = .red
+            self.view.makeToast(errorMessage, duration: 3.0, position: .bottom,style:style)
+        }
         loginViewModel.isEmailTextFieldHighLighted.bind { [weak self] in
             if $0 { self?.highlightTextField((self?.emailTextField)!)}
         }
@@ -120,7 +124,7 @@ class LoginViewController: UIViewController {
         
         loginViewModel.errorMessage.bind {
             guard let errorMessage = $0 else { return }
-
+            
             // this is just one of many style options
             
             self.view.makeToast(errorMessage, duration: 3.0, position: .bottom)

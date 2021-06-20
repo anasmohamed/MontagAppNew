@@ -11,6 +11,7 @@ target 'MontagApp' do
       pod 'SwiftyJSON', '~> 4.0'
       pod 'SDWebImage', '~> 5.0'
       pod 'SideMenu', '~> 6.0'
+      pod 'SwiftyMenu', '~> 0.6.5'
 
   target 'MontagAppTests' do
     inherit! :search_paths

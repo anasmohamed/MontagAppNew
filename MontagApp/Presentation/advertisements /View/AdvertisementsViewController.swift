@@ -66,6 +66,15 @@ class AdvertisementsViewController: UIViewController {
        
 
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
     /*
      // MARK: - Navigation
      
@@ -76,6 +85,9 @@ class AdvertisementsViewController: UIViewController {
      }
      */
     @IBAction func addAdveretisementBtnDidTapped(_ sender: Any) {
+        let addAdvertisementStoryboard = UIStoryboard(name: "AddAdvertisementView", bundle: nil)
+        let addAdvertisementViewController = addAdvertisementStoryboard.instantiateViewController(identifier: "AddAdvertisementViewController")
+        self.navigationController?.pushViewController(addAdvertisementViewController, animated: true)
     }
     
 }

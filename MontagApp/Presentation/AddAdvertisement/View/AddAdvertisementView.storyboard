@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Add Advertisement View Controller-->
+        <!--اعلان جديد-->
         <scene sceneID="xnN-A3-Ip7">
             <objects>
-                <tableViewController id="EjJ-ZR-T67" customClass="AddAdvertisementViewController" customModule="MontagApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="AddAdvertisementViewController" id="EjJ-ZR-T67" customClass="AddAdvertisementViewController" customModule="MontagApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="COv-cf-c0L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -480,7 +480,7 @@
                             <outlet property="delegate" destination="EjJ-ZR-T67" id="xs3-qT-Rlm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="A7G-hc-zXa"/>
+                    <navigationItem key="navigationItem" title="اعلان جديد" id="A7G-hc-zXa"/>
                     <connections>
                         <outlet property="AdvertisementAreaDropMenu" destination="RX3-YU-NKS" id="IbQ-h0-9fp"/>
                         <outlet property="addVideosOrImagestn" destination="1Ky-CT-zbW" id="TI3-Ug-ruE"/>

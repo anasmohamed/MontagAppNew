@@ -88,6 +88,8 @@ class AddAdvertisementViewController: UITableViewController,UIPickerViewDelegate
         detailsTextVIew.layer.borderColor = UIColor.gray.cgColor
         detailsTextVIew.layer.borderWidth = 1
         detailsTextVIew.layer.cornerRadius = 8
+        self.navigationController?.navigationBar.topItem?.title = ""
+
         // Do any additional setup after loading the view.
     }
     

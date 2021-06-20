@@ -11,17 +11,36 @@ import SideMenu
 class SideMenuTableViewController: UITableViewController {
     @IBOutlet weak var buttonTwo : UIView!
     @IBOutlet weak var fixedPages : UIView!
+    @IBOutlet weak var myAdsView: UIView!
+    @IBOutlet weak var messagesView: UIView!
+    @IBOutlet weak var profilePageView: UIView!
+    @IBOutlet weak var notfiicationView: UIView!
     @IBOutlet weak var howWeAre : UIView!
+    @IBOutlet weak var blackListView: UIView!
+    @IBOutlet weak var favoriteView: UIView!
     @IBOutlet weak var callUs : UIView!
     @IBOutlet weak var signUIVIew: UIView!
-    @IBOutlet weak var signInBtn: UIButton!
+    @IBOutlet weak var showFollowersView: UIView!
+    @IBOutlet weak var signInBtn: UIView!
+    @IBOutlet weak var logoutView: UIView!
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        signUIVIew.layer.cornerRadius = 20
+        if let signInView = signUIVIew {
+            signInView.layer.cornerRadius = 20
+        }
         buttonTwo.layer.cornerRadius = 20
         howWeAre.layer.cornerRadius = 20
         fixedPages.layer.cornerRadius = 20
         callUs.layer.cornerRadius = 20
+        notfiicationView.layer.cornerRadius = 20
+        profilePageView.layer.cornerRadius = 20
+        blackListView.layer.cornerRadius = 20
+        logoutView.layer.cornerRadius = 20
+        messagesView.layer.cornerRadius = 20
+        favoriteView.layer.cornerRadius = 20
+        showFollowersView.layer.cornerRadius = 20
+        myAdsView.layer.cornerRadius = 20
+
         // refresh cell blur effect in case it changed
         tableView.reloadData()
         

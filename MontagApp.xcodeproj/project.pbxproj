@@ -10,6 +10,12 @@
 		3278B250266A6747006329FE /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278B24F266A6747006329FE /* TableViewController.swift */; };
 		3278B255266A6F2C006329FE /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278B254266A6F2C006329FE /* UITableViewVibrantCell.swift */; };
 		3278B25D266A7922006329FE /* RoundCornderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278B25C266A7922006329FE /* RoundCornderButton.swift */; };
+		327AF9BA2683727F00031538 /* MyAddsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327AF9B92683727F00031538 /* MyAddsView.storyboard */; };
+		327AF9BF2683755F00031538 /* MyAddsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327AF9BE2683755F00031538 /* MyAddsViewController.swift */; };
+		327AF9C92683831500031538 /* MyAddsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327AF9C72683831500031538 /* MyAddsTableViewCell.xib */; };
+		327AF9CA2683831500031538 /* MyAddsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327AF9C82683831500031538 /* MyAddsTableViewCell.swift */; };
+		327AF9D726838DE900031538 /* MyAdsAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327AF9D626838DE900031538 /* MyAdsAPIManager.swift */; };
+		327AF9E226838F6300031538 /* MyAdsVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327AF9E126838F6300031538 /* MyAdsVIewModel.swift */; };
 		327F688B2667BFA700F2641A /* advertisementsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327F688A2667BFA700F2641A /* advertisementsView.storyboard */; };
 		327F68932667CB4000F2641A /* AdvertisementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327F68922667CB4000F2641A /* AdvertisementsViewController.swift */; };
 		327F68A12668208000F2641A /* CategoiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327F689F2668208000F2641A /* CategoiesCollectionViewCell.swift */; };
@@ -88,6 +94,12 @@
 		3278B24F266A6747006329FE /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = "MontagApp/Presentation/advertisements /TableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		3278B254266A6F2C006329FE /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewVibrantCell.swift; sourceTree = "<group>"; };
 		3278B25C266A7922006329FE /* RoundCornderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornderButton.swift; sourceTree = "<group>"; };
+		327AF9B92683727F00031538 /* MyAddsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyAddsView.storyboard; sourceTree = "<group>"; };
+		327AF9BE2683755F00031538 /* MyAddsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAddsViewController.swift; sourceTree = "<group>"; };
+		327AF9C72683831500031538 /* MyAddsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyAddsTableViewCell.xib; sourceTree = "<group>"; };
+		327AF9C82683831500031538 /* MyAddsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAddsTableViewCell.swift; sourceTree = "<group>"; };
+		327AF9D626838DE900031538 /* MyAdsAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAdsAPIManager.swift; sourceTree = "<group>"; };
+		327AF9E126838F6300031538 /* MyAdsVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAdsVIewModel.swift; sourceTree = "<group>"; };
 		327F688A2667BFA700F2641A /* advertisementsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = advertisementsView.storyboard; sourceTree = "<group>"; };
 		327F68922667CB4000F2641A /* AdvertisementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementsViewController.swift; sourceTree = "<group>"; };
 		327F689F2668208000F2641A /* CategoiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoiesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -181,6 +193,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		327AF9B126836FD300031538 /* MyAdds */ = {
+			isa = PBXGroup;
+			children = (
+				327AF9D526838DB400031538 /* MyAdsAPIManager */,
+				327AF9D426838DAB00031538 /* ViewModel */,
+				327AF9B226836FE000031538 /* View */,
+			);
+			path = MyAdds;
+			sourceTree = "<group>";
+		};
+		327AF9B226836FE000031538 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				327AF9C6268382B200031538 /* Cell */,
+				327AF9B92683727F00031538 /* MyAddsView.storyboard */,
+				327AF9BE2683755F00031538 /* MyAddsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		327AF9C6268382B200031538 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				327AF9C82683831500031538 /* MyAddsTableViewCell.swift */,
+				327AF9C72683831500031538 /* MyAddsTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		327AF9D426838DAB00031538 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				327AF9E126838F6300031538 /* MyAdsVIewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		327AF9D526838DB400031538 /* MyAdsAPIManager */ = {
+			isa = PBXGroup;
+			children = (
+				327AF9D626838DE900031538 /* MyAdsAPIManager.swift */,
+			);
+			path = MyAdsAPIManager;
+			sourceTree = "<group>";
+		};
 		327F68862667BE4400F2641A /* advertisements  */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +375,7 @@
 		32B0F0EE2666E43F00DF8566 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				327AF9B126836FD300031538 /* MyAdds */,
 				32F56BE8267BBEFF00696AD1 /* AddAdvertisement */,
 				327F68862667BE4400F2641A /* advertisements  */,
 				32B0F0EF2666E47700DF8566 /* Auth */,
@@ -606,8 +664,10 @@
 				32B0F0F52666E4EF00DF8566 /* LoginView.storyboard in Resources */,
 				327F68B22668336A00F2641A /* AdvertisementsTableViewCell.xib in Resources */,
 				32F56BEB267BBF4A00696AD1 /* AddAdvertisementView.storyboard in Resources */,
+				327AF9C92683831500031538 /* MyAddsTableViewCell.xib in Resources */,
 				32B0F0C82666E1F900DF8566 /* LaunchScreen.storyboard in Resources */,
 				327F68A22668208000F2641A /* CategoiesCollectionViewCell.xib in Resources */,
+				327AF9BA2683727F00031538 /* MyAddsView.storyboard in Resources */,
 				32B0F14B2666EC4000DF8566 /* SignUpView.storyboard in Resources */,
 				32B0F0C52666E1F900DF8566 /* Assets.xcassets in Resources */,
 				32B0F0C32666E1F700DF8566 /* Main.storyboard in Resources */,
@@ -743,6 +803,7 @@
 				32B0F1292666E90B00DF8566 /* Observable.swift in Sources */,
 				32B0F1262666E90B00DF8566 /* Checkbox.swift in Sources */,
 				32B0F12D2666E90B00DF8566 /* LogoAnimationView.swift in Sources */,
+				327AF9BF2683755F00031538 /* MyAddsViewController.swift in Sources */,
 				3278B25D266A7922006329FE /* RoundCornderButton.swift in Sources */,
 				327F68BA2668380B00F2641A /* Advertisement.swift in Sources */,
 				32B0F0C02666E1F700DF8566 /* ViewController.swift in Sources */,
@@ -781,6 +842,9 @@
 				32B0F1382666E95D00DF8566 /* User.swift in Sources */,
 				32E2860E267D109F0019AD14 /* AddAdvertisementViewController.swift in Sources */,
 				32B0F15D2666FE2400DF8566 /* SignupManager.swift in Sources */,
+				327AF9E226838F6300031538 /* MyAdsVIewModel.swift in Sources */,
+				327AF9CA2683831500031538 /* MyAddsTableViewCell.swift in Sources */,
+				327AF9D726838DE900031538 /* MyAdsAPIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

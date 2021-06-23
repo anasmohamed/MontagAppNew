@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1fe-ct-fXt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Adds View Controller-->
+        <scene sceneID="8uL-Fi-UfZ">
+            <objects>
+                <viewController id="OoV-lJ-EUv" customClass="MyAddsViewController" customModule="MontagApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8wb-QL-Fw5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRS-Ml-hWP">
+                                <rect key="frame" x="10" y="98" width="394" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Ja8-lJ-gFi"/>
+                                </constraints>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82e-rU-fUw">
+                                <rect key="frame" x="10" y="214" width="394" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="hop-DI-1ct"/>
+                                </constraints>
+                            </pickerView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zkl-Dz-4RL">
+                                <rect key="frame" x="0.0" y="314" width="414" height="548"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Ig-f3-6xv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hRS-Ml-hWP" firstAttribute="leading" secondItem="6Ig-f3-6xv" secondAttribute="leading" constant="10" id="1o2-Qo-WLv"/>
+                            <constraint firstItem="6Ig-f3-6xv" firstAttribute="trailing" secondItem="zkl-Dz-4RL" secondAttribute="trailing" id="3cM-i2-sFe"/>
+                            <constraint firstItem="82e-rU-fUw" firstAttribute="trailing" secondItem="hRS-Ml-hWP" secondAttribute="trailing" id="5xX-Kl-uAW"/>
+                            <constraint firstItem="6Ig-f3-6xv" firstAttribute="bottom" secondItem="zkl-Dz-4RL" secondAttribute="bottom" id="Ext-Y3-dv3"/>
+                            <constraint firstItem="82e-rU-fUw" firstAttribute="top" secondItem="hRS-Ml-hWP" secondAttribute="bottom" constant="16" id="FW2-LH-4dr"/>
+                            <constraint firstItem="hRS-Ml-hWP" firstAttribute="top" secondItem="6Ig-f3-6xv" secondAttribute="top" constant="10" id="Npo-tI-99C"/>
+                            <constraint firstItem="zkl-Dz-4RL" firstAttribute="leading" secondItem="6Ig-f3-6xv" secondAttribute="leading" id="ah0-1r-GDJ"/>
+                            <constraint firstItem="zkl-Dz-4RL" firstAttribute="top" secondItem="82e-rU-fUw" secondAttribute="bottom" id="cgg-Eh-4Qd"/>
+                            <constraint firstItem="82e-rU-fUw" firstAttribute="leading" secondItem="hRS-Ml-hWP" secondAttribute="leading" id="nHH-ID-FMJ"/>
+                            <constraint firstItem="hRS-Ml-hWP" firstAttribute="trailing" secondItem="6Ig-f3-6xv" secondAttribute="trailing" constant="-10" id="pUV-E4-EmR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QDl-55-6Vg"/>
+                    <connections>
+                        <outlet property="areaPickerVIew" destination="82e-rU-fUw" id="n3W-i0-eB0"/>
+                        <outlet property="msinClassficationPikerView" destination="hRS-Ml-hWP" id="rNe-eV-9yS"/>
+                        <outlet property="resultsAddsTableView" destination="zkl-Dz-4RL" id="acU-5Y-FSm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LVc-CR-8c5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="77.678571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bmO-59-cZH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1fe-ct-fXt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oRf-Ky-WRR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OoV-lJ-EUv" kind="relationship" relationship="rootViewController" id="Vro-X0-Rd0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cus-pT-tSA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

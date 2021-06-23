@@ -22,7 +22,7 @@ class MyAdsViewModel {
     var userId = ""
     var apiToken = ""
     var reloadTableView: Observable<[Advertisement]> = Observable([])
-    //       var order: Observable<orderId?> = Observable(nil)
+    var message : Observable<String?> = Observable(nil)
     
     func updateOrderId(userId:String,apiToken:String)  {
         self.userId = userId
@@ -33,6 +33,8 @@ class MyAdsViewModel {
             
             if advertisement != nil{
                 self?.advertisements = advertisement!
+            }else{
+                self?.message.value = message
             }
             
             //              self?.isLoading = false

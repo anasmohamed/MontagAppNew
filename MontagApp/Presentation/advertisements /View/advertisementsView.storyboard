@@ -677,6 +677,9 @@
                                                                     <real key="value" value="20"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="myAdsBtnDidTapped:" destination="StG-cV-JC8" eventType="touchUpInside" id="xto-iP-dOB"/>
+                                                            </connections>
                                                         </button>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_nav" translatesAutoresizingMaskIntoConstraints="NO" id="dgG-Sp-TUx">
                                                             <rect key="frame" x="320" y="10" width="30" height="20"/>

@@ -25,6 +25,8 @@ class SideMenuTableViewController: UITableViewController {
     @IBOutlet weak var logoutView: UIView!
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+
+
         if let signInView = signUIVIew {
             signInView.layer.cornerRadius = 20
         }
@@ -32,14 +34,17 @@ class SideMenuTableViewController: UITableViewController {
         howWeAre.layer.cornerRadius = 20
         fixedPages.layer.cornerRadius = 20
         callUs.layer.cornerRadius = 20
-        notfiicationView.layer.cornerRadius = 20
-        profilePageView.layer.cornerRadius = 20
-        blackListView.layer.cornerRadius = 20
-        logoutView.layer.cornerRadius = 20
-        messagesView.layer.cornerRadius = 20
-        favoriteView.layer.cornerRadius = 20
-        showFollowersView.layer.cornerRadius = 20
-        myAdsView.layer.cornerRadius = 20
+        if let notfiicationView = notfiicationView   {
+            notfiicationView.layer.cornerRadius = 20
+            profilePageView.layer.cornerRadius = 20
+            blackListView.layer.cornerRadius = 20
+            logoutView.layer.cornerRadius = 20
+            messagesView.layer.cornerRadius = 20
+            favoriteView.layer.cornerRadius = 20
+            showFollowersView.layer.cornerRadius = 20
+            myAdsView.layer.cornerRadius = 20
+        }
+        
 
         // refresh cell blur effect in case it changed
         tableView.reloadData()
@@ -55,7 +60,7 @@ class SideMenuTableViewController: UITableViewController {
         //        imageView.backgroundColor = UIColor.black.withAlphaComponent(0.2)
         //        tableView.backgroundView = imageView
     }
-    
+ 
     @IBAction func signInBtnDidTapped(_ sender: Any) {
         let loginViewStorboard = UIStoryboard(name: "LoginView", bundle: nil)
         let loginViewController = loginViewStorboard.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
@@ -68,6 +73,15 @@ class SideMenuTableViewController: UITableViewController {
         self.present(navigationController, animated: true, completion: nil)
         //        self.present(loginViewController, animated: true, completion: nil)
     }
+    
+    @IBAction func myAdsBtnDidTapped(_ sender: Any) {
+        let myAdsViewStorboard = UIStoryboard(name: "MyAddsView", bundle: nil)
+        let myAdsViewController = myAdsViewStorboard.instantiateViewController(identifier: "MyAddsViewController") as! MyAddsViewController
+        
+        //        loginViewController.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(myAdsViewController, animated: true)
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = super.tableView(tableView, cellForRowAt: indexPath) as! UITableViewVibrantCell
         

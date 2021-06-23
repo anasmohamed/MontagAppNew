@@ -8,28 +8,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Adds View Controller-->
+        <!--إعلاناتى-->
         <scene sceneID="8uL-Fi-UfZ">
             <objects>
-                <viewController id="OoV-lJ-EUv" customClass="MyAddsViewController" customModule="MontagApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyAddsViewController" id="OoV-lJ-EUv" customClass="MyAddsViewController" customModule="MontagApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8wb-QL-Fw5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRS-Ml-hWP">
-                                <rect key="frame" x="10" y="98" width="394" height="100"/>
+                                <rect key="frame" x="10" y="98" width="394" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Ja8-lJ-gFi"/>
+                                    <constraint firstAttribute="height" constant="80" id="Ja8-lJ-gFi"/>
                                 </constraints>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82e-rU-fUw">
-                                <rect key="frame" x="10" y="214" width="394" height="100"/>
+                                <rect key="frame" x="10" y="194" width="394" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="hop-DI-1ct"/>
+                                    <constraint firstAttribute="height" constant="80" id="hop-DI-1ct"/>
                                 </constraints>
                             </pickerView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zkl-Dz-4RL">
-                                <rect key="frame" x="0.0" y="314" width="414" height="548"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zkl-Dz-4RL">
+                                <rect key="frame" x="0.0" y="274" width="414" height="588"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -48,7 +48,7 @@
                             <constraint firstItem="hRS-Ml-hWP" firstAttribute="trailing" secondItem="6Ig-f3-6xv" secondAttribute="trailing" constant="-10" id="pUV-E4-EmR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="QDl-55-6Vg"/>
+                    <navigationItem key="navigationItem" title="إعلاناتى" id="QDl-55-6Vg"/>
                     <connections>
                         <outlet property="areaPickerVIew" destination="82e-rU-fUw" id="n3W-i0-eB0"/>
                         <outlet property="msinClassficationPikerView" destination="hRS-Ml-hWP" id="rNe-eV-9yS"/>

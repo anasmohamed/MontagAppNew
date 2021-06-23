@@ -55,12 +55,13 @@ class AdvertisementsViewController: UIViewController {
        
     @IBAction func menuBtnDidTapped(_ sender: Any) {
         let sideMenuStoryboard = UIStoryboard(name: "advertisementsView", bundle: nil)
-        if !(UserDefaults.standard.string(forKey: "token")!.isEmpty){
+        if !(UserDefaults.standard.string(forKey: "token")?.isEmpty ?? true){
             let sideMenuViewController = sideMenuStoryboard.instantiateViewController(identifier: "LoginSideMenuNavigationController") as! UINavigationController
             self.present(sideMenuViewController, animated: true)
 
         }else{
             let sideMenuViewController = sideMenuStoryboard.instantiateViewController(identifier: "SideMenuNavigationController") as! UINavigationController
+            
             self.present(sideMenuViewController, animated: true)
         }
        

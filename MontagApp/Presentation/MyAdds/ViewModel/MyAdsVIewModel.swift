@@ -24,7 +24,7 @@ class MyAdsViewModel {
     var reloadTableView: Observable<[Advertisement]> = Observable([])
     var message : Observable<String?> = Observable(nil)
     
-    func updateOrderId(userId:String,apiToken:String)  {
+    func update(userId:String,apiToken:String)  {
         self.userId = userId
         self.apiToken = apiToken
     }

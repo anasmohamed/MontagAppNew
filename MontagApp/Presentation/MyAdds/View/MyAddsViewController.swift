@@ -34,7 +34,9 @@ class MyAddsViewController: UIViewController,UIPickerViewDelegate, UIPickerViewD
 
         // Do any additional setup after loading the view.
     }
-  
+//    func update(userId: String,apiToken:String)  {
+//        myAdsViewModel.update(userId: userId, apiToken:apiToken )
+//    }
     func bindData() {
         myAdsViewModel.reloadTableView.bind {_ in
             
@@ -46,6 +48,7 @@ class MyAddsViewController: UIViewController,UIPickerViewDelegate, UIPickerViewD
         }
     }
     func fetchData() {
+        self.myAdsViewModel.update(userId: UserDefaults.standard.string(forKey: "id")!, apiToken: UserDefaults.standard.string(forKey: "token")!)
         myAdsViewModel.fetchData()
     }
     func setupTableView() {

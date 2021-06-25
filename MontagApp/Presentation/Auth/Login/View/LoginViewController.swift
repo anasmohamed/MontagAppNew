@@ -99,6 +99,8 @@ class LoginViewController: UIViewController {
         loginViewModel.loginSuccess.bind { [self] in
             if $0 != nil{
                 UserDefaults.standard.set($0?.email, forKey: "email")
+                UserDefaults.standard.set($0?.id, forKey: "id")
+
                 UserDefaults.standard.set($0!.apiToken, forKey: "token")
                 navigateToMainViewController()
             }

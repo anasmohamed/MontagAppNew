@@ -24,35 +24,94 @@ class AddAdsAPIManager {
                                     "internal_section_id":internalSectionId]
         
         // 3
-        
-        AF.request(url, method: .post,parameters: parameters,encoding: JSONEncoding.default)
-            .validate()
-            .responseJSON { response in
-                // 4
-                switch response.result {
-                case .success(let value):
-                    let json = JSON(value)
-                    let status = json["status"].boolValue
-                    if status{
-                        let user = User(with: json["data"])
-                        completionHandler(user,nil,nil)
-                    }else{
-                        let message = json["message"].stringValue
-                        
-                        if !message.isEmpty{
-                            completionHandler(nil,message,nil)
-                        }
-                    }
-                    print("JSON: \(json)")
-                case .failure(let error):
-                    print(error)
-                }
+        Alamofire.AF.upload(multipartFormData: { multipartFormData in
+            
+            for (image) in photos {
                 
-                //             self.items = starships.all
-                //             self.tableView.reloadData()
+                let imageData1 = image.jpegData(compressionQuality : 0.5)!
+                
+                multipartFormData.append(imageData1, withName: "images[]" , fileName: "photo.jpg", mimeType: "image/jpeg")
             }
-        
+            
+            for (key, value) in parameters {
+//                if key == "additions" {
+                    
+                    let arrData =  try! JSONSerialization.data(withJSONObject: value, options: .prettyPrinted)
+                    multipartFormData.append(arrData, withName: key as String)
+                    
+                }
+//            else{
+//                    multipartFormData.append("\(value)".data(using: String.Encoding.utf8)!, withName: key as String)
+//                }
+//            }
+            
+        },to: url , headers : [:])
+        { (result) in
+//            switch result {
+//
+//            case .success(let upload):
+//
+//                upload.uploadProgress(closure: { (progress) in
+//                    print("Upload Progress: \(progress.fractionCompleted)")
+//                    if progress.fractionCompleted != 1.0 {
+//                        //                        self.resultLabel.text = "جاري التحميل شكرا لانتظارك".localized
+//                    } else {
+//                        //self.resultLabel.text = "اكتمل التحميل وجاري التحويل".localized
+//                    }
+//                })
+//
+//                upload.responseJSON { response in
+//
+//                    let json = JSON(response.result.value!)
+//                    print(json)
+//
+//                    if json["status"] == "true" {
+//                        completion( nil , true)
+//                        print("Success")
+//                        let successMessage = json["message"].stringValue
+//                        AlertController.showAllert(title: "Success", message: successMessage, allertType: .success)
+//                    }else {
+//                        let error = ""
+//                        completion(error as? Error , false)
+//                        //print("error happen when Register Because \(json["message"])")
+//                        let ErrorMessage = json["message"].stringValue
+//                        AlertController.showAllert(title: "Error", message: ErrorMessage, allertType: .error)
+//                    }
+//                }
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
     }
+        
+//        AF.request(url, method: .post,parameters: parameters,encoding: JSONEncoding.default)
+//            .validate()
+//            .responseJSON { response in
+//                // 4
+//                switch response.result {
+//                case .success(let value):
+//                    let json = JSON(value)
+//                    let status = json["status"].boolValue
+//                    if status{
+//                        let user = User(with: json["data"])
+//                        completionHandler(user,nil,nil)
+//                    }else{
+//                        let message = json["message"].stringValue
+//
+//                        if !message.isEmpty{
+//                            completionHandler(nil,message,nil)
+//                        }
+//                    }
+//                    print("JSON: \(json)")
+//                case .failure(let error):
+//                    print(error)
+//                }
+//
+//                //             self.items = starships.all
+//                //             self.tableView.reloadData()
+//            }
+//
+//    }
     
 }
 

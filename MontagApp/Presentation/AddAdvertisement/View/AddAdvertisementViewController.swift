@@ -21,11 +21,15 @@ class AddAdvertisementViewController: UITableViewController,UIPickerViewDelegate
     @IBOutlet weak var addVideosOrImagestn: UIButton!
     @IBOutlet weak var videoView: UIView!
     
+    @IBOutlet weak var adsPhotoCollectionView: UICollectionView!
+    
+
     var userId: String = ""
     var apiToken: String = ""
     var phone : String = ""
     var adsPhotos = [UIImage]()
-    
+    var myArr :[UIImage] = []
+
     var areaPickerData: [String] =  ["المنطقة 6", "المنطقة 5", "المنطقة 4", "المنطقة 3", "المنطقة 2", "المنطقة 1"]
     var internalAreaPickerData: [String] =  ["المنطقة 6", "المنطقة 5", "المنطقة 4", "المنطقة 3", "المنطقة 2", "المنطقة 1"]
     var mainClassificationPickerData: [String] = ["التصنيف 6", "التصنيف 5", "التصنيف 4", "التصنيف 3", "التصنيف 2", "التصنيف 1"]
@@ -34,13 +38,14 @@ class AddAdvertisementViewController: UITableViewController,UIPickerViewDelegate
     var addAdsViewModel = AddAdsViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        videoView.layer.cornerRadius = 10
-        videoView.layer.borderWidth = 1
-        videoView.layer.borderColor = UIColor.gray.cgColor
-        
-        addVideosOrImagestn.layer.cornerRadius = 10
-        addVideosOrImagestn.layer.borderWidth = 1
-        addVideosOrImagestn.layer.borderColor = UIColor.gray.cgColor
+//        videoView.layer.cornerRadius = 10
+//        videoView.layer.borderWidth = 1
+//        videoView.layer.borderColor = UIColor.gray.cgColor
+
+        myArr.append(UIImage(named: "add-image")!)
+//        addVideosOrImagestn.layer.cornerRadius = 10
+//        addVideosOrImagestn.layer.borderWidth = 1
+//        addVideosOrImagestn.layer.borderColor = UIColor.gray.cgColor
         self.AdvertisementAreaDropMenu.delegate = self
         self.AdvertisementAreaDropMenu.dataSource = self
         self.subAreaDropMenu.delegate = self
@@ -57,6 +62,8 @@ class AddAdvertisementViewController: UITableViewController,UIPickerViewDelegate
         detailsTextVIew.layer.cornerRadius = 8
         self.navigationController?.navigationBar.topItem?.title = ""
         initData()
+        adsPhotoCollectionView.delegate = self
+        adsPhotoCollectionView.dataSource = self
         // Do any additional setup after loading the view.
     }
     func initData()  {

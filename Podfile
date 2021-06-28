@@ -12,6 +12,7 @@ target 'MontagApp' do
       pod 'SDWebImage', '~> 5.0'
       pod 'SideMenu', '~> 6.0'
       pod 'SwiftyMenu', '~> 0.6.5'
+      pod 'OpalImagePicker'
 
   target 'MontagAppTests' do
     inherit! :search_paths

@@ -67,11 +67,12 @@ class AddAdvertisementViewController: UITableViewController,UIPickerViewDelegate
         // Do any additional setup after loading the view.
     }
     func initData()  {
-        guard let userId = UserDefaults.standard.string(forKey: "id"), let apiToken = UserDefaults.standard.string(forKey: "token") else {
+        guard let userId = UserDefaults.standard.string(forKey: "id"), let apiToken = UserDefaults.standard.string(forKey: "token"),let phone = UserDefaults.standard.string(forKey: "phone") else {
             return
         }
         self.userId = userId
         self.apiToken = apiToken
+        self.phone = phone
         
     }
     @IBAction func addNewAdsBtnDidTapped(_ sender: Any) {

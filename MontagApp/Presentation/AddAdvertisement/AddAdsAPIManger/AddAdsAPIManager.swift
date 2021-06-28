@@ -13,108 +13,84 @@ class AddAdsAPIManager {
     func addAds(userId:String,apiToken:String,title:String,phone:String,city:String,details:String,mainSectionId:String,subSectionId:String,internalSectionId:String,photos:[UIImage], completionHandler: @escaping (User?,String?,Error?) -> Void) {
         let url = "https://muntj.com/api/v1/add-new-advertisement"
         // 2
-        let parameters: [String: String] = ["user_id":userId,
-                                    "api_token":apiToken,
-                                    "title":title,
-                                    "phone":phone,
-                                    "city":city,
-                                    "details":details,
-                                    "main_section_id":mainSectionId,
-                                    "sub_section_id":subSectionId,
-                                    "internal_section_id":internalSectionId]
+        //        let parameters: [String: String] = ["user_id":userId,
+        //                                            "api_token":apiToken,
+        //                                            "title":title,
+        //                                            "phone":phone,
+        //                                            "city":city,
+        //                                            "details":details,
+        //                                            "main_section_id":mainSectionId,
+        //                                            "sub_section_id":subSectionId,
+        //                                            "internal_section_id":internalSectionId]
         
         // 3
         AF.upload(multipartFormData: { multipartFormData in
-            
-            for (image) in photos {
-                
-                let imageData1 = image.jpegData(compressionQuality : 0.5)!
-                
-                multipartFormData.append(imageData1, withName: "images[]" , fileName: "photo.jpg", mimeType: "image/jpeg")
-            }
+            //            var parameters = [String:AnyObject]();
+            let parameters: [String: String] = ["user_id":userId,
+                                                "api_token":apiToken,
+                                                "title":title,
+                                                "phone":phone,
+                                                "city":city,
+                                                "details":details,
+                                                "main_section_id":mainSectionId,
+                                                "sub_section_id":subSectionId,
+                                                "internal_section_id":internalSectionId]
             
             for (key, value) in parameters {
-//                if key == "additions" {
-                    
-                    let arrData =  try! JSONSerialization.data(withJSONObject: value, options: .prettyPrinted)
-                    multipartFormData.append(arrData, withName: key as String)
+                if let data = value.data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue)) {
+                    multipartFormData.append(data, withName: key)
                     
                 }
-//            else{
-//                    multipartFormData.append("\(value)".data(using: String.Encoding.utf8)!, withName: key as String)
-//                }
-//            }
+            }
             
-        },to: url , headers : [:])
-        { (result) in
-//            switch result {
-//
-//            case .success(let upload):
-//
-//                upload.uploadProgress(closure: { (progress) in
-//                    print("Upload Progress: \(progress.fractionCompleted)")
-//                    if progress.fractionCompleted != 1.0 {
-//                        //                        self.resultLabel.text = "جاري التحميل شكرا لانتظارك".localized
-//                    } else {
-//                        //self.resultLabel.text = "اكتمل التحميل وجاري التحويل".localized
-//                    }
-//                })
-//
-//                upload.responseJSON { response in
-//
-//                    let json = JSON(response.result.value!)
-//                    print(json)
-//
-//                    if json["status"] == "true" {
-//                        completion( nil , true)
-//                        print("Success")
-//                        let successMessage = json["message"].stringValue
-//                        AlertController.showAllert(title: "Success", message: successMessage, allertType: .success)
-//                    }else {
-//                        let error = ""
-//                        completion(error as? Error , false)
-//                        //print("error happen when Register Because \(json["message"])")
-//                        let ErrorMessage = json["message"].stringValue
-//                        AlertController.showAllert(title: "Error", message: ErrorMessage, allertType: .error)
-//                    }
-//                }
-//            case .failure(let error):
-//                print(error)
-//            }
-//        }
-    }
+            
+            for i in 0..<photos.count{
+                
+                let imageData1 = (photos[i] as! UIImage).jpegData(compressionQuality: 0.5)!
+                multipartFormData.append(imageData1, withName: "image"+String(format:"%d",i), fileName: "image.jpg", mimeType: "image/jpeg")
+                print("success");
+            }
+            
+            
+        },
+        to: url, method: .post , headers: [:]).responseJSON(completionHandler:{
+          response in
+            print(response)
+        })
+                                                                
+                                                               
         
-//        AF.request(url, method: .post,parameters: parameters,encoding: JSONEncoding.default)
-//            .validate()
-//            .responseJSON { response in
-//                // 4
-//                switch response.result {
-//                case .success(let value):
-//                    let json = JSON(value)
-//                    let status = json["status"].boolValue
-//                    if status{
-//                        let user = User(with: json["data"])
-//                        completionHandler(user,nil,nil)
-//                    }else{
-//                        let message = json["message"].stringValue
-//
-//                        if !message.isEmpty{
-//                            completionHandler(nil,message,nil)
-//                        }
-//                    }
-//                    print("JSON: \(json)")
-//                case .failure(let error):
-//                    print(error)
-//                }
-//
-//                //             self.items = starships.all
-//                //             self.tableView.reloadData()
-//            }
-//
-//    }
+        //        AF.request(url, method: .post,parameters: parameters,encoding: JSONEncoding.default)
+        //            .validate()
+        //            .responseJSON { response in
+        //                // 4
+        //                switch response.result {
+        //                case .success(let value):
+        //                    let json = JSON(value)
+        //                    let status = json["status"].boolValue
+        //                    if status{
+        //                        let user = User(with: json["data"])
+        //                        completionHandler(user,nil,nil)
+        //                    }else{
+        //                        let message = json["message"].stringValue
+        //
+        //                        if !message.isEmpty{
+        //                            completionHandler(nil,message,nil)
+        //                        }
+        //                    }
+        //                    print("JSON: \(json)")
+        //                case .failure(let error):
+        //                    print(error)
+        //                }
+        //
+        //                //             self.items = starships.all
+        //                //             self.tableView.reloadData()
+        //            }
+        //
+        //    }
+        
+    }
     
-}
-
-
-
+    
+    
 }

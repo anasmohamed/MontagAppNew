@@ -100,7 +100,7 @@ class LoginViewController: UIViewController {
             if $0 != nil{
                 UserDefaults.standard.set($0?.email, forKey: "email")
                 UserDefaults.standard.set($0?.id, forKey: "id")
-
+                UserDefaults.standard.set($0?.mobile, forKey: "phone")
                 UserDefaults.standard.set($0!.apiToken, forKey: "token")
                 navigateToMainViewController()
             }

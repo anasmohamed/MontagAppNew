@@ -88,6 +88,14 @@ class AdvertisementsViewController: UIViewController {
     @IBAction func addAdveretisementBtnDidTapped(_ sender: Any) {
         let addAdvertisementStoryboard = UIStoryboard(name: "AddAdvertisementView", bundle: nil)
         let addAdvertisementViewController = addAdvertisementStoryboard.instantiateViewController(identifier: "AddAdvertisementViewController")
+       
+        
+        //        loginViewController.modalPresentationStyle = .fullScreen
+//        let navigationController = UINavigationController.init(rootViewController: addAdvertisementViewController)
+//
+//        navigationController.modalPresentationStyle = .fullScreen
+        
+//        self.present(navigationController, animated: true, completion: nil)
         self.navigationController?.pushViewController(addAdvertisementViewController, animated: true)
     }
     

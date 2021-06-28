@@ -82,6 +82,21 @@ class SideMenuTableViewController: UITableViewController {
         self.navigationController?.pushViewController(myAdsViewController, animated: true)
     }
     
+    @IBAction func signoutBtnDidTapped(_ sender: Any) {
+        let loginViewStorboard = UIStoryboard(name: "LoginView", bundle: nil)
+        let loginViewController = loginViewStorboard.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
+        
+        //        loginViewController.modalPresentationStyle = .fullScreen
+//        let navigationController = UINavigationController.init(rootViewController: loginViewController)
+        UserDefaults.standard.removeObject(forKey: "id")
+        UserDefaults.standard.removeObject(forKey: "token")
+        UserDefaults.standard.removeObject(forKey: "phone")
+        UserDefaults.standard.removeObject(forKey: "email")
+
+//        navigationController.modalPresentationStyle = .fullScreen
+        
+        self.navigationController?.pushViewController(loginViewController, animated: true)
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = super.tableView(tableView, cellForRowAt: indexPath) as! UITableViewVibrantCell
         

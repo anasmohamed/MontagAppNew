@@ -24,7 +24,7 @@ class AddAdsAPIManager {
                                     "internal_section_id":internalSectionId]
         
         // 3
-        Alamofire.AF.upload(multipartFormData: { multipartFormData in
+        AF.upload(multipartFormData: { multipartFormData in
             
             for (image) in photos {
                 
@@ -117,3 +117,4 @@ class AddAdsAPIManager {
 
 
 
+}

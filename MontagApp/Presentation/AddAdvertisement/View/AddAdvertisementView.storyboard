@@ -70,6 +70,9 @@
                                                         <constraint firstAttribute="height" constant="30" id="tAv-Ca-AJa"/>
                                                     </constraints>
                                                     <state key="normal" title="+"/>
+                                                    <connections>
+                                                        <action selector="addViedoOrPhotosBtnDidTapped:" destination="EjJ-ZR-T67" eventType="touchUpInside" id="SGj-aj-P9S"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -452,6 +455,9 @@
                                                             <state key="normal" title="إلغاء">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="backBtnDidTapped:" destination="EjJ-ZR-T67" eventType="touchUpInside" id="Bt7-3K-wea"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfK-y3-Bt6">
                                                             <rect key="frame" x="190" y="0.0" width="184" height="48"/>
@@ -460,6 +466,9 @@
                                                             <state key="normal" title="إنشاء">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="addNewAdsBtnDidTapped:" destination="EjJ-ZR-T67" eventType="touchUpInside" id="PNf-Ib-Cdv"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -484,6 +493,9 @@
                     <connections>
                         <outlet property="AdvertisementAreaDropMenu" destination="RX3-YU-NKS" id="IbQ-h0-9fp"/>
                         <outlet property="addVideosOrImagestn" destination="1Ky-CT-zbW" id="TI3-Ug-ruE"/>
+                        <outlet property="adsDetailsTextView" destination="OX3-Y6-QDs" id="O5F-Uo-C7F"/>
+                        <outlet property="adsTitleTextField" destination="QHr-kv-gJc" id="1IO-GW-GBg"/>
+                        <outlet property="adsVideoLinkTextField" destination="PgC-9B-Yg6" id="Apd-2e-XCy"/>
                         <outlet property="detailsTextVIew" destination="OX3-Y6-QDs" id="03E-Xd-0uK"/>
                         <outlet property="inernalClassficationPickerView" destination="haB-dL-yO0" id="F0z-Lu-GBT"/>
                         <outlet property="mainClassificationPickerView" destination="MlQ-1k-RLN" id="fZT-29-3yF"/>

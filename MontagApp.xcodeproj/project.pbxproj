@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		320EC3D32686410A00AB9F7B /* AddAdsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320EC3D22686410A00AB9F7B /* AddAdsViewModel.swift */; };
 		320EC3D82686412A00AB9F7B /* AddAdsAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320EC3D72686412A00AB9F7B /* AddAdsAPIManager.swift */; };
+		3254C932268E00E5007FE92C /* SignUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3254C931268E00E4007FE92C /* SignUpView.storyboard */; };
 		3278B250266A6747006329FE /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278B24F266A6747006329FE /* TableViewController.swift */; };
 		3278B255266A6F2C006329FE /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278B254266A6F2C006329FE /* UITableViewVibrantCell.swift */; };
 		3278B25D266A7922006329FE /* RoundCornderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278B25C266A7922006329FE /* RoundCornderButton.swift */; };
@@ -59,7 +60,6 @@
 		32B0F1312666E90B00DF8566 /* EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F1242666E90B00DF8566 /* EmailValidation.swift */; };
 		32B0F1322666E90B00DF8566 /* ShadowForUIVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F1252666E90B00DF8566 /* ShadowForUIVIew.swift */; };
 		32B0F1382666E95D00DF8566 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F1372666E95D00DF8566 /* User.swift */; };
-		32B0F14B2666EC4000DF8566 /* SignUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B0F14A2666EC4000DF8566 /* SignUpView.storyboard */; };
 		32B0F1502666F42B00DF8566 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F14F2666F42B00DF8566 /* SignUpTableViewController.swift */; };
 		32B0F1582666FE1200DF8566 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F1572666FE1200DF8566 /* SignupViewModel.swift */; };
 		32B0F15D2666FE2400DF8566 /* SignupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0F15C2666FE2400DF8566 /* SignupManager.swift */; };
@@ -97,6 +97,7 @@
 		2122B8BE1AE3E4CB9EB06A47 /* Pods-MontagApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MontagApp.debug.xcconfig"; path = "Target Support Files/Pods-MontagApp/Pods-MontagApp.debug.xcconfig"; sourceTree = "<group>"; };
 		320EC3D22686410A00AB9F7B /* AddAdsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAdsViewModel.swift; sourceTree = "<group>"; };
 		320EC3D72686412A00AB9F7B /* AddAdsAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAdsAPIManager.swift; sourceTree = "<group>"; };
+		3254C931268E00E4007FE92C /* SignUpView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUpView.storyboard; sourceTree = "<group>"; };
 		3278B24F266A6747006329FE /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = "MontagApp/Presentation/advertisements /TableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		3278B254266A6F2C006329FE /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewVibrantCell.swift; sourceTree = "<group>"; };
 		3278B25C266A7922006329FE /* RoundCornderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornderButton.swift; sourceTree = "<group>"; };
@@ -153,7 +154,6 @@
 		32B0F1242666E90B00DF8566 /* EmailValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidation.swift; sourceTree = "<group>"; };
 		32B0F1252666E90B00DF8566 /* ShadowForUIVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowForUIVIew.swift; sourceTree = "<group>"; };
 		32B0F1372666E95D00DF8566 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		32B0F14A2666EC4000DF8566 /* SignUpView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SignUpView.storyboard; path = ../../../../../../../Documents/SignUpView.storyboard; sourceTree = "<group>"; };
 		32B0F14F2666F42B00DF8566 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
 		32B0F1572666FE1200DF8566 /* SignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		32B0F15C2666FE2400DF8566 /* SignupManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupManager.swift; sourceTree = "<group>"; };
@@ -522,8 +522,8 @@
 		32B0F1472666EBB300DF8566 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3254C931268E00E4007FE92C /* SignUpView.storyboard */,
 				32B0F1612667018C00DF8566 /* Extension */,
-				32B0F14A2666EC4000DF8566 /* SignUpView.storyboard */,
 				32B0F14F2666F42B00DF8566 /* SignUpTableViewController.swift */,
 			);
 			path = View;
@@ -711,8 +711,8 @@
 				327AF9C92683831500031538 /* MyAddsTableViewCell.xib in Resources */,
 				32B0F0C82666E1F900DF8566 /* LaunchScreen.storyboard in Resources */,
 				327F68A22668208000F2641A /* CategoiesCollectionViewCell.xib in Resources */,
+				3254C932268E00E5007FE92C /* SignUpView.storyboard in Resources */,
 				327AF9BA2683727F00031538 /* MyAddsView.storyboard in Resources */,
-				32B0F14B2666EC4000DF8566 /* SignUpView.storyboard in Resources */,
 				32B0F0C52666E1F900DF8566 /* Assets.xcassets in Resources */,
 				32B0F0C32666E1F700DF8566 /* Main.storyboard in Resources */,
 				327F688B2667BFA700F2641A /* advertisementsView.storyboard in Resources */,
